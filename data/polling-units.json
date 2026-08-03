@@ -1,0 +1,3627 @@
+[
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-001",
+    "name": "IGBO-EFON TOWN I"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-002",
+    "name": "IGBO-EFON TOWN II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-003",
+    "name": "IGBO-EFON TOWN III"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-004",
+    "name": "IGBO-EFON TOWN IV"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-005",
+    "name": "IGBO-EFON TOWN V"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-006",
+    "name": "OKUN IBEJU TOWN (ALPHA BEACH ROAD BY TRANSFORMER)"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-007",
+    "name": "OKUN IBEJU TOWN II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-008",
+    "name": "LAFIAJI TOWN I"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-009",
+    "name": "LAFIAJI TOWN II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-010",
+    "name": "OKUN AJAH PRY. SCH. I"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-011",
+    "name": "OKUN AJAH PRY. SCH. II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-012",
+    "name": "OKUN MOPO AKINLADE PRY. SCH. I"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-013",
+    "name": "OKUN MOPO AKINLADE PRY. SCH. II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-014",
+    "name": "OGOMBO PRY. SCH. I"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-015",
+    "name": "OGOMBO HEALTH CENTRE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-016",
+    "name": "OGOMBO PRY. SCH. II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-017",
+    "name": "OGOMBO PRY. SCH. III"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-018",
+    "name": "SECURITY POST (IKOTA HOUSING ESTATE) II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-019",
+    "name": "IKOTA HOUSING"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-020",
+    "name": "FLAT 548 IKOTA ESTATE I"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-021",
+    "name": "FLAT 548 IKOTA ESTATE II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-022",
+    "name": "IKOTA HOUSING ESTATE III"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-023",
+    "name": "FLAT 890 BAMBOO IKOTA HOUSING ESTATE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-024",
+    "name": "BAMBOO ESTATE, I"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-025",
+    "name": "BAMBOO ESTATE, IKOTA II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-026",
+    "name": "BAMBOO ESTATE, IKOTA III"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-027",
+    "name": "AJIWE TOWN"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-028",
+    "name": "OLUGBOROGAN TOWN HALL"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-029",
+    "name": "ORILE MOBA TOWN"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-030",
+    "name": "JUMATUL- ISLAMIYA PRY SCHOOL I"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-031",
+    "name": "57, BAALE STR, BY TRANSFORMER"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-032",
+    "name": "JUMATUL- ISLAMIYA PRY SCHOOL II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-033",
+    "name": "JINADU STR. BY JOHN EJAKUTA STR. JUNCT."
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-034",
+    "name": "JUMATUL ISLAMIYA PRY SCH III"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-035",
+    "name": "FUBARA DUBLIN GREEN STR BY JINADU STR JUNCTION"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-036",
+    "name": "3, MUSTAFA LASISI STR."
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-037",
+    "name": "25, BAALE STR"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-038",
+    "name": "BAALE STR. BY OLUKOLU STR. JUNCTION"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-039",
+    "name": "OPEN SPACE AT OLUKOLU COMPOUND"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-040",
+    "name": "12, OMOBA OLUKOLU SRT. BY OLUAKINBOLA STR. JUNCTION"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-041",
+    "name": "TRANSFORMER BY BAALE STR. LAFIAJI"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-042",
+    "name": "FRONT OF BAALE HOUSE LAFIAJI"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-043",
+    "name": "MR. MONEY CLOSE, LAFIAJI"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-044",
+    "name": "OLOWU STR. JUNCTION BY 20 BAALE STR"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-045",
+    "name": "OPP. BAALE HOUSE ROAD"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-046",
+    "name": "OKUN MOPO PRY. SCH. AKINLADE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-047",
+    "name": "INFRONT OF OWODE OGOMBO CENTRAL MOSQUE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-048",
+    "name": "OPEN SPACE BY APOSTLE FABUDA STR. JUNCTION BY OGOMBO"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-049",
+    "name": "PERO HOTEL JUNCTION, BY TRANSFORMER"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-050",
+    "name": "OGOMBO PRY. SCH"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-051",
+    "name": "OPEN SPACE OGOMBO CENTRAL MOSQUE AT AKAPO COMPOUND"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-052",
+    "name": "FLAT 95, IKOTA HOUSING ESTATE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-053",
+    "name": "ROAD 27 BY ROAD 25 JUNCTION IKOTA VILLA ESTATE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-054",
+    "name": "FLAT 137 IKOTA HOUSING ESTATE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-055",
+    "name": "GEDEGEDE TAPA RESETTLEMENT"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-056",
+    "name": "MINOR ESTATE GATE, LEKKI EXP."
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-057",
+    "name": "FLAT 322, IKOTA MAIN MARKET"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-058",
+    "name": "OPP. M. OYEWOLE CHURCH CLOSE JUNCTION"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-059",
+    "name": "ABRAHAM ADESANYA GATE ALONG OGOMBO"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-060",
+    "name": "ABRAHAM ADESANYA GATE II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-061",
+    "name": "GRACELAND ESTATE GATE I"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-062",
+    "name": "GRACELAND ESTATE GATE II"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-063",
+    "name": "CROWN ESTATE GATE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-064",
+    "name": "UNITED ESTATE GATE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-065",
+    "name": "FRONT OF TOPNOTH PLAZA"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-066",
+    "name": "OPEN SPACE AT AJIWE GATE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-067",
+    "name": "OPEN SPACE IN AJIWE TOWN"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-068",
+    "name": "SULE OLUSESI ROAD BESIDE CONSERVATION CENTRE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-069",
+    "name": "OPEN SPACE BY MOBA CENTRAL MOSQUE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-070",
+    "name": "JUNCTION OF MOBA CENTRAL MOSQUE"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-071",
+    "name": "HEALTH CENTRE, JUNCTION BY ABEJAMU RD."
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-072",
+    "name": "JUNCTION BY TRANSFORMER STATION"
+  },
+  {
+    "wardCode": "20-08-05",
+    "code": "24-08-05-073",
+    "name": "INFRONT OF VOCATIONAL CENTRE"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-001",
+    "name": "ADEMOLA OLOKUN"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-002",
+    "name": "ADEMOLA JUNCTION"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-003",
+    "name": "IRETI GRAMMAR SCH. I"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-004",
+    "name": "IRETI GRAMMAR SCH. II"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-005",
+    "name": "WARDERS' BARRACKS"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-006",
+    "name": "AWOLOWO ROAD"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-007",
+    "name": "WARDERS' BARRACK I"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-008",
+    "name": "WARDERS' BARRACK II"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-009",
+    "name": "WARDERS' BARRACK III"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-010",
+    "name": "RAYMOND NJOKU I"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-011",
+    "name": "RAYMOND NJOKU II"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-012",
+    "name": "OKOTIE EBOH"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-013",
+    "name": "WAHAB FOLAWIYO"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-014",
+    "name": "OBA OYEKAN/CAMERON"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-015",
+    "name": "GLOVER"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-016",
+    "name": "MOBOLAJI JOHNSON/ONITANA"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-017",
+    "name": "MOBOLAJI JOHNSON"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-018",
+    "name": "MOBOLAJI JOHNSON BY B/STOP"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-019",
+    "name": "MOBOLAJI JOHNSON/ELEGUSHI"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-020",
+    "name": "CORPORATION DRIVE I"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-021",
+    "name": "CORPORATION DRIVE II"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-022",
+    "name": "DOLPHIN ESTATE EXIT I"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-023",
+    "name": "DOLPHIN ESTATE EXIT II"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-024",
+    "name": "DOLPHIN ESTATE EXIT III"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-025",
+    "name": "IKEJA WAY, DOLPHIN ESTATE"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-026",
+    "name": "ASSOCIATION AVENUE I"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-027",
+    "name": "ASSOCIATION AVENUE II"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-028",
+    "name": "ASSOCIATION AVENUE III"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-029",
+    "name": "OPEN SPACE BY MILITARY HOSPITAL"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-030",
+    "name": "ST. GEORGES PRY. SCHOOL"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-031",
+    "name": "FRONT OF POLO CLUB"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-032",
+    "name": "OPP POLO CLUB"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-033",
+    "name": "FRONT OF F.O FILLING STATION"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-034",
+    "name": "I68, AWOLOWO ROAD"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-035",
+    "name": "OPP. EDUCATION DISTRICT, IKOYI"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-036",
+    "name": "OPP. YMCA, IKOYI"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-037",
+    "name": "BY STATE HOUSE OFF AWOLOWO ROAD"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-038",
+    "name": "WAHAB FOLAWIYO SEC. SCH, OSBORNE"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-039",
+    "name": "OBA OYEKAN/CAMERON ROAD I"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-040",
+    "name": "53 GLOVER ROAD JUNCTION"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-041",
+    "name": "1, ONITANA JUNCTION"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-042",
+    "name": "INFRONT OF DSS QUARTERS, ALAGBON"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-043",
+    "name": "ENTRANCE OF ALAGBON"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-044",
+    "name": "JUNCTION OF MOBOLAJI/ELEGUSHI"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-045",
+    "name": "BESIDE THE ENTRANCE OF CORPORATION DRIVE"
+  },
+  {
+    "wardCode": "20-08-08",
+    "code": "24-08-08-046",
+    "name": "173, ISALE EKO WAY"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-001",
+    "name": "OPEN SPACE AT ARMY CAMP (TARKWA BAY)"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-002",
+    "name": "OKO ATA I (ABAGBO VILLAGE I)"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-003",
+    "name": "OKO ATA II (ABAGBO VILLAGE II)"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-004",
+    "name": "OGOGORO COMMUNITY I (EBUTE OKO I)"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-005",
+    "name": "OGOGORO COMMUNITY II (EBUTE OKO II)"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-006",
+    "name": "ATLAS COVE COMMUNITY (OKO KATE)"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-007",
+    "name": "L-YACHT C BUILDING (OKUN AYO)"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-008",
+    "name": "BISHOP OLUWOLE STREET I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-009",
+    "name": "BISHOP OLUWOLE STREET II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-010",
+    "name": "BAR-BEACH TOWER I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-011",
+    "name": "BAR-BEACH TOWER II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-012",
+    "name": "BAR-BEACH TOWER III"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-013",
+    "name": "BAR-BEACH POLICE BARRACKS I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-014",
+    "name": "BAR-BEACH POLICE BARRACKS II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-015",
+    "name": "NAVAL DOCKYARD"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-016",
+    "name": "OCEANOGRAPHY & MARINE I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-017",
+    "name": "OCEANOGRAPHY & MARINE II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-018",
+    "name": "SOLOMON CLOSE"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-019",
+    "name": "ELIAS CLOSE"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-020",
+    "name": "FEDERAL PA,LACE HOTEL"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-021",
+    "name": "AIRFORCE PRIMARY SCHOOL I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-022",
+    "name": "AIRFORCE PRIMARY SCHOOL II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-023",
+    "name": "LEGICO FLAT I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-024",
+    "name": "LEGICO FLAT II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-025",
+    "name": "BONNY CAMP I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-026",
+    "name": "BONNY CAMP II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-027",
+    "name": "BONNY CAMP III"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-028",
+    "name": "BONNY CAMP IV"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-029",
+    "name": "BONNY CAMP V"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-030",
+    "name": "GOVERNMENT COLLEGE V/ISLAND I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-031",
+    "name": "OZUMBA MBADIWE"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-032",
+    "name": "KOFO ABAYOMI - I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-033",
+    "name": "KOFO ABAYOMI - II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-034",
+    "name": "IDOWU MARTINS - I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-035",
+    "name": "IDOWU MARTINS - II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-036",
+    "name": "ADEOLA ODEKU - I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-037",
+    "name": "ADEOLA ODEKU - II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-038",
+    "name": "IDEJO/OJU OLOBUN"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-039",
+    "name": "OLOGUN AGBAJE/SAKA TINUBU"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-040",
+    "name": "SAKA TINUBU/AMODU OJIKUTU I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-041",
+    "name": "SAKA TINUBU/AMODU OJIKUTU II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-042",
+    "name": "SAKA TINUBU/KASUMU EKEMODE"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-043",
+    "name": "OPEN SPACE AT AGIP CHALET"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-044",
+    "name": "OPEN SPACE AT AMERICAN EMBASSY CHALET"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-045",
+    "name": "OPEN SPACE AT OKO ATA"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-046",
+    "name": "OPEN SPACE AT OGOGORO COMMUNITY"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-047",
+    "name": "OPEN SPACE AT UAC COMPOUND(ENTRANCE OF OKUN AYO)"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-048",
+    "name": "1228, BISHOP OLUWOLE STR"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-049",
+    "name": "EXIT OF BISHOP OLUWOLE STR"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-050",
+    "name": "BESIDE PLOT 1221A, BISHOP OLUWOLE"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-051",
+    "name": "BESIDE BAR BEACH POLICE BARRACK"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-052",
+    "name": "OPP. BAR BEACH POLICE BARRACKS"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-053",
+    "name": "ENTRANCE OF NEPA CLOSE"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-054",
+    "name": "FRONT OF NTA STATION"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-055",
+    "name": "ENTRANCE OF SOLOMON CLOSE"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-056",
+    "name": "BESIDE FEDERAL PALACE HOTEL"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-057",
+    "name": "BESIDE LEGICO FLAT I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-058",
+    "name": "OPP LEGICO FLAT"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-059",
+    "name": "FRONT OF BONNY CAMP GATE"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-060",
+    "name": "UNDER BRIDGE BONNY CAMP I"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-061",
+    "name": "BONNY CAMP ROUNDABOUT"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-062",
+    "name": "UNDER BRIDGE BONNY CAMP II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-063",
+    "name": "GOVERNMENT COLLEGE V/ISLAND II"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-064",
+    "name": "GOVERNMENT COLLEGE V/ISLAND III"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-065",
+    "name": "5, OZUMBA MBADIWE BY WALTER CARINGTON"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-066",
+    "name": "OPP. NO 1, KOFO ABAYOMI STR."
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-067",
+    "name": "ENTRANCE OF MUSA TARADU"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-068",
+    "name": "OPP. PLOT 241 KOFO ABAYOMI STR."
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-069",
+    "name": "OPP. 21A, IDOWU MARTINS STR"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-070",
+    "name": "INFRONT OF 12/22 ADEOLA ODEKU"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-071",
+    "name": "OJU OLOBUN BY SAKA TINUBU"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-072",
+    "name": "OPP. NO 1, SAKA TINUBU"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-073",
+    "name": "OPP SAKA TINUBU/AMODU OJIKUTU JUNCT."
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-074",
+    "name": "1146, GBARO CLOSE OFF AMODU OJIKUTU"
+  },
+  {
+    "wardCode": "24-08-01",
+    "code": "24-08-01-075",
+    "name": "14, KASUMU EKEMODE STR."
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-001",
+    "name": "ENGINEERING CLOSE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-002",
+    "name": "ADEOLA HOPEWELL/AKINBO SAVAGE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-003",
+    "name": "ADEOLA HOPEWELL/IDOWU TAYLOR"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-004",
+    "name": "SANUSI FAFUNWA/OLADELE OLASORE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-005",
+    "name": "SANUSI FAFUNWA/OLADELE OLASORE II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-006",
+    "name": "AKIN ADESOLA STREET I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-007",
+    "name": "AKIN ADESOLA STREET II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-008",
+    "name": "KARIMU KOTUN/OKO-AWO CLOSE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-009",
+    "name": "KARIMU KOTUN"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-010",
+    "name": "OLOSA STREET/TIAMIYU SAVAGE I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-011",
+    "name": "OLOSA STREET/TIAMIYU SAVAGE II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-012",
+    "name": "KURAMO TOWN I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-013",
+    "name": "KURAMO TOWN II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-014",
+    "name": "METHODIST BOYS HIGH SCHOOL I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-015",
+    "name": "METHODIST BOYS HIGH SCHOOL II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-016",
+    "name": "AJOSE ADEOGUN/JUBRIL MARTINS I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-017",
+    "name": "AJOSE ADEOGUN/JUBRIL MARTINS II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-018",
+    "name": "AJOSE ADEOGUN/JUBRIL MARTINS III"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-019",
+    "name": "MURI OKUNOLA STREET I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-020",
+    "name": "MURI OKUNOLA STREET II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-021",
+    "name": "APESE TOWN I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-022",
+    "name": "APESE TOWN II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-023",
+    "name": "APESE TOWN III"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-024",
+    "name": "VICTORIA ISLAND SECONDARY SCHOOL I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-025",
+    "name": "VICTORIA ISLAND SECONDARY SCHOOL II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-026",
+    "name": "BALARABE MUSA"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-027",
+    "name": "TRANSIT TOWN"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-028",
+    "name": "1004 FLAT"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-029",
+    "name": "CRESCENT C 1004 FLAT"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-030",
+    "name": "1004 FLAT I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-031",
+    "name": "1004 FLAT II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-032",
+    "name": "F.M.W. & H 1004 FLAT"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-033",
+    "name": "1004 FLAT III"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-034",
+    "name": "CRESCENT E 1004 FLAT"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-035",
+    "name": "1004 FLAT IV"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-036",
+    "name": "1004 FLAT V"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-037",
+    "name": "ENTRANCE OF ENGINEERING CLOSE OFF IDOWU TAILOR"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-038",
+    "name": "CHURCH GATE BY NURSES HOUSE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-039",
+    "name": "OPP. LAW SCH GATE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-040",
+    "name": "ADETOKUNBO ADEMOLA STR ENTRANCE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-041",
+    "name": "OPP. NO 2, IDOWU TAYLOR STR"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-042",
+    "name": "END OF ADEOLA HOPEWELL STR."
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-043",
+    "name": "INFRONT OF FREEDOM HOUSE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-044",
+    "name": "BESIDE SANUSI FAFUNWA/OLADELE OLASORE JUNCT."
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-045",
+    "name": "OPP. COSHARIS MOTORS"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-046",
+    "name": "OPP. 1301, AKIN ADESOLA"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-047",
+    "name": "JUNCTION OF KARIMU KOTUN/OKO-AWO CLOSE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-048",
+    "name": "1382, TIAMIYU SAVAGE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-049",
+    "name": "KURAMO PRY. SCH 1"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-050",
+    "name": "ENTRANCE OF TIAMIYU SAVAGE BY AHMADU BELLO"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-051",
+    "name": "OPP. OLOSA STREET/TIAMIYU SAVAGE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-052",
+    "name": "INFRONT OF EKO ATLANTIC"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-053",
+    "name": "BESIDE EKO ATLANTIC"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-054",
+    "name": "EKO ATLANTIC GATE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-055",
+    "name": "FRONT OF MBHS I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-056",
+    "name": "FRONT OF MBHS II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-057",
+    "name": "ENTRANCE OF SAMUEL ADEDOYIN STR."
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-058",
+    "name": "177A, SINARI DARANIJO"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-059",
+    "name": "276, AJOSE ADEOGUN"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-060",
+    "name": "105A, AJOSE ADEOGUN STR."
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-061",
+    "name": "YOUNIS BASHORUN JUNCTION OFF AJOSE ADEOGUN STR"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-062",
+    "name": "PLOT 233, JUBRIL MATINS"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-063",
+    "name": "ENTRANCE OF JUBRIL MARTINS BY MURI OKUNOLA"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-064",
+    "name": "JUNCTION MURI OKUNOLA STREET"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-065",
+    "name": "OPP JUNCTION MURI OKUNOLA STREET"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-066",
+    "name": "MURI OKUNOLA STR. BY TESTING GROUND"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-067",
+    "name": "ETIM INYANG BY MURI OKUNOLA"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-068",
+    "name": "OPP. LSDPC MURI OKUNOLA/ ETIM INYANG JUNCTION"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-069",
+    "name": "JUNCTION OF FATAI DUROSINMI ETTI"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-070",
+    "name": "END OF LIGALI AYORINDE BY ONIRU BEACH GATE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-071",
+    "name": "OPP. ONIRU BEACH GATE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-072",
+    "name": "WATER CORPORATION BY EVENT CENTRE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-073",
+    "name": "WATER CORPORATION RD. OPP. ENTERPRISE HUBS"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-074",
+    "name": "INFRONT OF QUEEN PARK EVENT CENTRE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-075",
+    "name": "ABISOGUN GATE OFF YUSUF ABIODUN RD"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-076",
+    "name": "24, BY YUSUFF ABIODUN MARY BASSEY RD"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-077",
+    "name": "NEW MARKET @ ONIGBEFON STR"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-078",
+    "name": "FRONT OF ONIRU PALACE ROAD"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-079",
+    "name": "ENTRANCE OF PRINCE ADEMOLA ONIRU OFF OGUNYEMI SRT"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-080",
+    "name": "OPPOSITE HOUSE 17, YUSUF ABIODUN STR"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-081",
+    "name": "INFRONT OF MILLEMIUM HOME"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-082",
+    "name": "VICTORIA ISLAND SECONDARY SCHOOL III"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-083",
+    "name": "VICTORIA ISLAND JUNIOR SEC. SCH. I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-084",
+    "name": "VICTORIA ISLAND JUNIOR SEC. SCH. II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-085",
+    "name": "KURAMO JUNIOR SCH I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-086",
+    "name": "KURAMO SENIOR SCH."
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-087",
+    "name": "KURAMO JUNIOR SCH II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-088",
+    "name": "42, BALARABE MUSA CRESCENT"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-089",
+    "name": "ENTRANCE OF BABATUNDE JOSE STR. OFF ADETOKUNBO"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-090",
+    "name": "TRANSIT TOWN OPP. LAGOSIA RESTAURANT I"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-091",
+    "name": "TRANSIT TOWN OPP. LAGOSIA RESTAURANT II"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-092",
+    "name": "20, SAMUEL MANUWA"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-093",
+    "name": "12, BISHOP ABOYADE COLE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-094",
+    "name": "FRONT OF HOUSE 11, 1004 FLAT"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-095",
+    "name": "ADJ CENTRAL MOSQUE 1004 ESTATE"
+  },
+  {
+    "wardCode": "24-08-02",
+    "code": "24-08-02-096",
+    "name": "BESIDE CLUSTER A 1004 ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-001",
+    "name": "ELF ALAGUNTAN"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-002",
+    "name": "ORILE ILESAN TOWN I"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-003",
+    "name": "ORILE ILESAN TOWN II"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-004",
+    "name": "BLOCK 81, ILASAN HOUSING ESTATE I"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-005",
+    "name": "BLOCK 81, ILASAN HOUSING ESTATE II"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-006",
+    "name": "ILASAN HOUSING ESTATE I"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-007",
+    "name": "ILASAN HOUSING ESTATE II"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-008",
+    "name": "ILASAN HOUSING ESTATE(169-184)"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-009",
+    "name": "ILASAN HOUSING ESTATE I"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-010",
+    "name": "ILASAN HOUSING ESTATE II"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-011",
+    "name": "ILASAN HOUSING ESTATE III"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-012",
+    "name": "ILASAN HOUSING ESTATE IV"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-013",
+    "name": "ILASAN HOUSING ESTATE (249) I"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-014",
+    "name": "ILASAN HOUSING ESTATE (249) II"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-015",
+    "name": "ILASAN SECONDARY SCHOOL I"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-016",
+    "name": "ILASAN SECONDARY SCHOOL II"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-017",
+    "name": "ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-018",
+    "name": "ILASAN HOUSING ESTATE(263) I"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-019",
+    "name": "ILASAN HOUSING ESTATE(263) II"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-020",
+    "name": "ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-021",
+    "name": "MAIYEGUN TOWN I"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-022",
+    "name": "MAIYEGUN TOWN II"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-023",
+    "name": "ILASAN/MAIYEGUN"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-024",
+    "name": "GBARA TOWN I"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-025",
+    "name": "GBARA TOWN II"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-026",
+    "name": "GBARA TOWN III"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-027",
+    "name": "OLOGOLO TOWN"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-028",
+    "name": "UPDC LEKKI ESTATE GATE I"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-029",
+    "name": "UPDC LEKKI ESTATE GATE II"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-030",
+    "name": "UPDC LEKKI ESTATE BY PLOT 9 CRYSTAL ESTATE JUNCTION"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-031",
+    "name": "PLOT 136 UPDC ESTATE ROAD, LEKKI (V)"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-032",
+    "name": "NEIGHBOURHOOD SAFETY CORPS JUCTION"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-033",
+    "name": "OPEN SPACE AT MOPOL ZONE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-034",
+    "name": "DR. FAMESHE JUNCTION BY ORILE ILASAN ROAD"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-035",
+    "name": "BLOCK 380 BY IFEOLUWA HOSPITAL JUNCTION"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-036",
+    "name": "OPP BLOCK 132 ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-037",
+    "name": "OPP BLOCK 144 ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-038",
+    "name": "BEHIND BLOCK 138 BY MEG-BIG SCH. JUNCTION"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-039",
+    "name": "BLOCK 180 JUNCTION ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-040",
+    "name": "BLOCK 167 ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-041",
+    "name": "BLOCK 129 ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-042",
+    "name": "BLOCK 269 ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-043",
+    "name": "BLOCK 262 ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-044",
+    "name": "BLOCK 156 OPP. ILASAN SECONDARY SCH."
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-045",
+    "name": "4. OBA SAHEED ELEGUSHI STR."
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-046",
+    "name": "BLOCK 12 ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-047",
+    "name": "BLOCK 268 ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-048",
+    "name": "BLOCK 347 ILASAN HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-049",
+    "name": "BLOCK 389 JUNCTION"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-050",
+    "name": "INFRONT OF BLOCK 390-410"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-051",
+    "name": "MAYEGUN PRY. SCH. I"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-052",
+    "name": "AMINU STR. ARO TOWN"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-053",
+    "name": "OSENI MAYEGUN BY ABDUL COMPOUND JUNCTION"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-054",
+    "name": "MAYEGUN PRY. SCH. II"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-055",
+    "name": "7, BADRU STR. GBARA"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-056",
+    "name": "JUNCTION OF GBARA TOWN"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-057",
+    "name": "GBARA JUNCTION BY BALOGUN STR."
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-058",
+    "name": "MEMUNAT SHITTA STR BY OLOGOLO ROAD JUNCTION"
+  },
+  {
+    "wardCode": "24-08-03",
+    "code": "24-08-03-059",
+    "name": "BARUWA TOWN BY BARUWA (TRANSFORMER)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-001",
+    "name": "ITEDO TOWN I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-002",
+    "name": "ITEDO TOWN II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-003",
+    "name": "ENTRANCE OF IKATE I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-004",
+    "name": "ENTRANCE OF IKATE II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-005",
+    "name": "IKATE LAND I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-006",
+    "name": "IKATE LAND II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-007",
+    "name": "IKATE LAND III"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-008",
+    "name": "IKATE LAND IV"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-009",
+    "name": "IGBOKUSU TOWN I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-010",
+    "name": "IGBOKUSU TOWN II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-011",
+    "name": "IGBOKUSU TOWN III"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-012",
+    "name": "LEKKI SCHEME I - I (FIRSTBANK ADMIRALTY WAY)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-013",
+    "name": "LEKKI SCHEME I -II (ADMIRALTY WAY)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-014",
+    "name": "LEKKI SCHEME I - III (WESTRON CLOSE)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-015",
+    "name": "LEKKI SCHEME I - IV( TANTALIZER ROAD)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-016",
+    "name": "LEKKI SCHEME I - V ( MODEL PRY. SCH. MARUWA)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-017",
+    "name": "LEKKI SCHEME I - VI (CATHOLIC CHURCH)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-018",
+    "name": "LEKKI SCHEME I - VII (PAVILION)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-019",
+    "name": "AGUNGI/IDADO TOWN I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-020",
+    "name": "AGUNGI/IDADO TOWN II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-021",
+    "name": "OSAPA LONDON I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-022",
+    "name": "OSAPA LONDON II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-023",
+    "name": "OSAPA LONDON III"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-024",
+    "name": "OSAPA LONDON IV"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-025",
+    "name": "AJIRAN PRY. SCH. I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-026",
+    "name": "AJIRAN PRY. SCH. II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-027",
+    "name": "AJIRAN PRY. SCH. III"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-028",
+    "name": "ODOFIN ST./AJIRAN TOWN"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-029",
+    "name": "IKOTA PRY. SCH. I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-030",
+    "name": "IKOTA PRY. SCH. II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-031",
+    "name": "IKOTA PRY. SCH. III"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-032",
+    "name": "VICTORIA GARDEN CITY I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-033",
+    "name": "VICTORIA GARDEN CITY II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-034",
+    "name": "ENTRANCE OF CHURCH STREET ITEDO"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-035",
+    "name": "OPP. THE APOSTOLIC CHURCH ITEDO"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-036",
+    "name": "ENTRANCE OF HARISON CLOSE, ITEDO"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-037",
+    "name": "END OF HARISON CLOSE, ITEDO"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-038",
+    "name": "ENTRANCE OF IKATE III"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-039",
+    "name": "4, OBA YEKINI ELEGUSHI STR."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-040",
+    "name": "8, OBA YEKINI ELEGUSHI STR."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-041",
+    "name": "10, OBA YEKINI ELEGUSHI STR."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-042",
+    "name": "12, OBA YEKINI ELEGUSHI STR."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-043",
+    "name": "IKATE LAND (V)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-044",
+    "name": "32, OBA YEKINI ELEGUSHI ROAD"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-045",
+    "name": "IKATE LAND VI"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-046",
+    "name": "GBANGBALA STR BY OBA YEKINI ELEGUSHI ROAD"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-047",
+    "name": "JUNCTION OF FREEDOM WAY"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-048",
+    "name": "18 OBA YEKINI ELEGUSHI ROAD"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-049",
+    "name": "OPP OBA ELEGUSHI PALACE"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-050",
+    "name": "23, OBA ELEGUSHI PALACE ROAD"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-051",
+    "name": "ENTRANCE OF IGBOKUSU TOWN"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-052",
+    "name": "NICON TOWN GATE"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-053",
+    "name": "FEMI OKUNU ESTATE GATE PHASE III"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-054",
+    "name": "FRONT OF AL-HUJJAJ MOSQUE, GBOKUSU"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-055",
+    "name": "15 ERINFOLAMI STR. BY MUYIBI STR. JUNCTION"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-056",
+    "name": "PLATINUM WAY ENTRANCE"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-057",
+    "name": "OPP. FIRST BANK ADMIRALTY WAY"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-058",
+    "name": "ADMIRALTY WAY BY WOLE ARIYO STR. JUNCTION"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-059",
+    "name": "ADMIRALTY WAY BY OKEKEPO AKANDE STR. JUNCTION"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-060",
+    "name": "OPP. PARKTONIAN HOTEL KAYODE ANIMASHAUN STR."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-061",
+    "name": "OPP. UBA ADMIRALTY WAY"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-062",
+    "name": "WESTRON CLOSE BY FATAI AROBIEKE STR."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-063",
+    "name": "FATAI AROBIEKE SRT. BY ADMIRALTY ROAD JUNCTION"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-064",
+    "name": "TANTALIZERS ROAD ADMIRALTY ROUNDABOUT"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-065",
+    "name": "OLUBUNMI OWA SRT. BY ADMIRALTY WAY"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-066",
+    "name": "OSIBO OFODILE"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-067",
+    "name": "JUNCTION OF JOLAYEMI STREET (OPP PINEFIELD SCH.)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-068",
+    "name": "BASHORUN OKUNSANYA STR BY ADMIRALTY JUNCTION"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-069",
+    "name": "MODEL PRIMARY SCHOOL, OMOWUNMI ADEBIMPE STR."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-070",
+    "name": "LEKKI PHASE I CENTRAL MOSQUE BY OBAOYEKAN"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-071",
+    "name": "DOWEN COLLEGE ADEBAYO DORATHY"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-072",
+    "name": "THE LAGOON SCH. BY OMOWUNMI ADEBIMPE ROAD"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-073",
+    "name": "CENTRAL LEKKI RESIDENT ESTATE BY OMOWUNMI ADEBIMPE ROAD"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-074",
+    "name": "OTUNBA OGUNGBE ADEDOYIN"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-075",
+    "name": "AKINTOLA AJEIGBE STR. BY OMOWUNMI ADEBIMPE STR."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-076",
+    "name": "DUROSINMI ETTI JUNCTION BY ADEWUNMI ADEBIMPE STR."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-077",
+    "name": "AKEEM DICKSON"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-078",
+    "name": "PROVIDENCE STR BY OMOWUNMI ADEBIMPE JUNCTION"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-079",
+    "name": "OPEN SPACE AT OPP. PENNISULA HOTEL, PROVIDENCE SRT."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-080",
+    "name": "AKINBI DISU SRT. BY PROVIDENCE SRT. JUNCTION"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-081",
+    "name": "ALAYELUWA STR. BY PROVIDENCE SRT. JUNCTION"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-082",
+    "name": "AWKUZU STR. BT HALIFIELD SCHOOL JUNCTION"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-083",
+    "name": "OBA OYEKAN ESTATE BY AKEEM DICKSON JUNCTION"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-084",
+    "name": "PAVILON AT ADMIRALTY WAY"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-085",
+    "name": "LEKKI FARM AVENUE BY ADMIRALTY WAY JUNCTION"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-086",
+    "name": "ENTRANCE OF IDADO MOSQUE"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-087",
+    "name": "CHEVY VIEW ESTATE GATE"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-088",
+    "name": "ENTRANCE OF AGUNGI AJIRAN"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-089",
+    "name": "19, AGUNGI AJIRAN ROAD"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-090",
+    "name": "OPEN SPACE CHICKEN REPUBLIC AGUNGI AJIRAN ROAD"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-091",
+    "name": "40 MURITALA STR. OSAPA LONDON"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-092",
+    "name": "27, BAMIDELE ELETU STR. OSAPA"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-093",
+    "name": "2, OLUFEMI STR."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-094",
+    "name": "JUNCTION OF FRIENDS COLONY WAY"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-095",
+    "name": "MONARCH GARDEN BY BAMIDELE ELETU"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-096",
+    "name": "17, EGBODAGBE STR, OSAPA LONDON"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-097",
+    "name": "AJIRAN PRY. SCH. AJIRAN ROUND ABOUT IB"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-098",
+    "name": "AJIRAN PRY. SCH. AJIRAN ROUND ABOUT IC"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-099",
+    "name": "BESIDE THE MOSQUE, AJIRAN"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-100",
+    "name": "INFRONT OF OJOMU VILLA, AJIRAN ILAJE (I)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-101",
+    "name": "INFRONT OF OJOMU VILLA, AJIRAN ILAJE (II)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-102",
+    "name": "CARLTON ESTATE MAIN GATE"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-103",
+    "name": "OPEN SPACE AT AJIRAN ILAJE"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-104",
+    "name": "ODOFIN STR. BESIDE TRANSFORMER"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-105",
+    "name": "CHARLTON GATE ALONG CHEVRON RD."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-106",
+    "name": "NORTHERN FORESHORE ESTATE MAIN GATE"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-107",
+    "name": "CHINESE ESTATE ALONG CHEVRON RD."
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-108",
+    "name": "BAKARE ESTATE MAIN GATE"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-109",
+    "name": "IKOTA PRY. SCH IB"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-110",
+    "name": "ENTRANCE OF BAALE SRT. IKOTA"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-111",
+    "name": "ROAD 2 BY EBUTE IKOTA JUNCTION I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-112",
+    "name": "IKOTA PRY. SCH. IIB"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-113",
+    "name": "ROAD 3 BY RCCG JUNCTION IKOTA"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-114",
+    "name": "ROAD 1 BY ROAD 2 JUNCTION I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-115",
+    "name": "ROAD 1 BY ROAD 2 JUNCTION II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-116",
+    "name": "IKOTA PRY. SCH. (III B)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-117",
+    "name": "IKOTA PRY. SCH. (III C)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-118",
+    "name": "ROAD 2 BY EBUTE IKOTA JUNCTION II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-119",
+    "name": "VICTORIA GARDEN CITY (III)"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-120",
+    "name": "OPP. NO 32A, VICTORIA GARDEN CITY PARK"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-121",
+    "name": "OPP. ROAD 12, JUNCTION VICTORIA GARDEN CITY PARK"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-122",
+    "name": "SECURITY OFFICE, VICTORIA GARDEN CITY PARK"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-123",
+    "name": "INSIDE VICTORIA GARDEN CITY I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-124",
+    "name": "INSIDE VICTORIA GARDEN CITY II"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-125",
+    "name": "OPEN SPACE @ SWISS INT. ROUND ABOUT I"
+  },
+  {
+    "wardCode": "24-08-04",
+    "code": "24-08-04-126",
+    "name": "OPEN SPACE @ SWISS INT. ROUND ABOUT II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-001",
+    "name": "AJAH PRY. SCHOOL I"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-002",
+    "name": "AJAH PRY. SCHOOL II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-003",
+    "name": "AJAH PRY. SCHOOL III"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-004",
+    "name": "AJAH PRY. SCHOOL IV"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-005",
+    "name": "AJAH HEALTH CENTRE I"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-006",
+    "name": "AJAH HEALTH CENTRE II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-007",
+    "name": "AJAH ILAJE BOOTH I"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-008",
+    "name": "AJAH ILAJE BOOTH II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-009",
+    "name": "ISALE IJEBU I"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-010",
+    "name": "ISALE IJEBU II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-011",
+    "name": "AJAH OPEN SPACE I"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-012",
+    "name": "AJAH OPEN SPACE II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-013",
+    "name": "ASOKO TOWN I"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-014",
+    "name": "ASOKO TOWN II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-015",
+    "name": "SANGOTEDO PRY. SCH. I"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-016",
+    "name": "SANGOTEDO PRY. SCH. II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-017",
+    "name": "SANGOTEDO PRY. SCH. III"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-018",
+    "name": "SANGOTEDO PRY. SCH. IV"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-019",
+    "name": "AJAH PRY. SCHOOL V"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-020",
+    "name": "OPEN SPACE AT 5, BALOGUN STREET JUNCTION"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-021",
+    "name": "OPEN SPACE BALOGUN STREET EXIT"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-022",
+    "name": "OPEN SPACE AT ROYAL GARDEN ESTATE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-023",
+    "name": "OPEN SPACE AT NO 2, SHITA CLOSE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-024",
+    "name": "AJAH PRY SCHOOL VI"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-025",
+    "name": "OPEN SPACE AT AIYETORO BERGER STREET"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-026",
+    "name": "AJAH PRY. SCHOOL VII"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-027",
+    "name": "OPEN SPACE AT ALESH HOTEL JUNCTION"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-028",
+    "name": "26/28, AIYETORO RD"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-029",
+    "name": "AIYETORO RD. BESIDE 26/28, CELESTIAL CHURCH"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-030",
+    "name": "OPEN SPACE AT HEALTH CENTRE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-031",
+    "name": "OPEN SPACE AT AJAH ILAJE BOOTH, ILAJE ROAD DOWN"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-032",
+    "name": "OPEN SPACE AT ODUGBESE STREET BY NDLEA"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-033",
+    "name": "OPEN SPACE AT AJAH ILAJE BOOTH, ILAJE ROAD UP"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-034",
+    "name": "OPEN SPACE BERGER JUNCTION BY AIYETORO ROAD"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-035",
+    "name": "OPEN SPACE BY KOJO COMPOUND AGO EGUN"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-036",
+    "name": "OPEN SPACE AT OJUPON STR."
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-037",
+    "name": "INTERSECTION OF ISALE IJEBU AT OJUPON STR"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-038",
+    "name": "OPEN SPACE ADEOLA STR. BY KAJOLA MOSQUE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-039",
+    "name": "TRANSFORMER JUNCTION BY OKE-IKOTA BY ALESH"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-040",
+    "name": "BUDE STR. BY THOMAS ESTATE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-041",
+    "name": "OPEN SPACE AT NO 1, OSAPA STR. BY DORIN HOSPITAL GATE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-042",
+    "name": "OPP. VICTORY ESTATE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-043",
+    "name": "3, JINADU STREET"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-044",
+    "name": "OPEN SPACE AT DORIN HOSPITAL GATE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-045",
+    "name": "OPEN SPACE AT MAKARIOUS STREET, AJAH"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-046",
+    "name": "10 FAMILY JUNCTION"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-047",
+    "name": "OPEN SPACE OPP. LBS. PAN AFRICAN UNIVERSITY"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-048",
+    "name": "FRSC GATE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-049",
+    "name": "ENTRANCE OF VINTAGE TREASURE ESTATE, OKO ADO B/STOP. I"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-050",
+    "name": "ENTRANCE OF VINTAGE TREASURE ESTATE, OKO ADO B/STOP. II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-051",
+    "name": "OPEN SPACE BY TREASURE ESTATE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-052",
+    "name": "JUNCTION OF NO 1, ABIODUN BANIRE STR. ALFA OGIDAN"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-053",
+    "name": "16, CHURCH STR. ALFA OGIDAN"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-054",
+    "name": "SANGOTEDO PRY. SCH. V"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-055",
+    "name": "OPEN SPACE AT SANGOTEDO COUNCIL SECRETARIAT"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-056",
+    "name": "OPEN SPACE AT KM 52, LEKKI EPE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-057",
+    "name": "SANGOTEDO PRY. SCH. VI"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-058",
+    "name": "OLOKO CLOSE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-059",
+    "name": "RAFIU AJAKAIYE STR"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-060",
+    "name": "FRONT OF SANGOTEDO COUNCIL SECRETARIAT"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-061",
+    "name": "GANIU OLUBUSE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-062",
+    "name": "86 OKEMALE STREET"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-063",
+    "name": "25, BORROWPIT JUNCTION"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-064",
+    "name": "SANGOTEDO PRY. SCH. VII"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-065",
+    "name": "21 YAKUBU IMAM OLUFUNKE STR"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-066",
+    "name": "6, KEJI OLAJIDE STR. MAJEK BASHORUN I"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-06-067",
+    "name": "OPP. 6, KEJI OLAJIDE STR. MAJEK BASHORUN II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-001",
+    "name": "ADDO PRY. SCH. I"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-002",
+    "name": "ADDO PRY. SCH. II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-003",
+    "name": "OKE-IRA NLA JUNCTION"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-004",
+    "name": "OKE-IRA NLA"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-005",
+    "name": "ADDO PRY. SCH."
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-006",
+    "name": "ADDO TOWN"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-007",
+    "name": "BADORE TOWN"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-008",
+    "name": "BADORE PRY. SCH."
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-009",
+    "name": "LANGBASA PRY. SCH. I"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-010",
+    "name": "LANGBASA PRY. SCH. II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-011",
+    "name": "LANGBASA PRY. SCH. III"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-012",
+    "name": "SCHOOL PREMISES, ADDO"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-013",
+    "name": "SUNNY VILLA BY COMMONWEALTH ADDO"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-014",
+    "name": "ADDO PRY SCH, III"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-015",
+    "name": "ADDO PRY SCH IV"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-016",
+    "name": "IDIORO JUNCTION, ADDO"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-017",
+    "name": "OKETIRI JUNCTION BY KEMFORT HOTEL, ADDO"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-018",
+    "name": "OPP. HOUSE 4 SALIU OBODO RD. OKEIRA NLA"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-019",
+    "name": "SALIU OBODO AT OKEIRA NLA JUNCTION ADDO RD"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-020",
+    "name": "GOOD HOME ESTATE JUNCTION"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-021",
+    "name": "MARSHYHILL ESTATE BY POWER LINE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-022",
+    "name": "LORD'S WAY JUNCTION"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-023",
+    "name": "1, IDOWU BAALE STR. OFF ADO RD. OKEIRA KEKERE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-024",
+    "name": "END OF CHIEF IDOWU BAALE STR. OFF CELE CLOSE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-025",
+    "name": "OPEN SPACE AT AJEBO MARKET BY POWER LINE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-026",
+    "name": "ADDO PRY. SCH. V"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-027",
+    "name": "ADDO PRY. SCH. VI"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-028",
+    "name": "TIAMIYU STREET JUNCTION, ADDO"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-029",
+    "name": "ITUN EGBE JUNCTION OFF ADDO RD"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-030",
+    "name": "ADDO KEKERE OWODE ROUND ABOUT"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-031",
+    "name": "BADORE PRY SCH. II"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-032",
+    "name": "BADORE PRY SCH. III"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-033",
+    "name": "OPEN SPACE BY BAALE BUS STOP JUNCTION"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-034",
+    "name": "OPEN SPACE AT AGO-TAPA"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-035",
+    "name": "1, JATTO STR. OPP. CENTRAL MOSQUE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-036",
+    "name": "COMMUNITY SEN. SEC. SCH. BADORE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-037",
+    "name": "SILVER POINT ESTATE GATE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-038",
+    "name": "OPEN SPACE AT CARWASH OPP. JOYCEVILLE SCH."
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-039",
+    "name": "OPEN SPACE AT OLUWASEYI MARKET ISALE IJEBU"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-040",
+    "name": "3, OLAYIWOLA STREET IYEMOJA"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-041",
+    "name": "15, FIRST UNITY ESTATE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-042",
+    "name": "COOPERATIVE VILLA JUNCTION, COOPERATIVE RD"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-043",
+    "name": "SEASIDE ESTATE GATE, PAPA B/STOP"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-044",
+    "name": "OPP. BADORE CENTRAL MOSQUE"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-045",
+    "name": "JUNCTION BESIDE 3, KEHINDE AJOSE STR"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-046",
+    "name": "LANGBASA PRY. SCH. IV"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-047",
+    "name": "LANGBASA PRY. SCH. V"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-048",
+    "name": "AKINGUNLA CLOSE LANGBASA"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-049",
+    "name": "JUNCTION OF KINGLSEY OSU STREET"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-050",
+    "name": "LANGBASA PRY. SCH. VI"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-051",
+    "name": "LANGBASA PRY. SCH. VII"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-052",
+    "name": "OPEN SPACE AT KOBISHESE COMPOUND"
+  },
+  {
+    "wardCode": "24-08-06",
+    "code": "24-08-07-053",
+    "name": "LANGBASA PRY. SCH. VIII"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-001",
+    "name": "IKOYI/OSBORN ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-002",
+    "name": "CAMERON ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-003",
+    "name": "LUGARD/BARROW"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-004",
+    "name": "GLOVER ROAD I"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-005",
+    "name": "GLOVER ROAD II"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-006",
+    "name": "THOMPSON AVENUE"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-007",
+    "name": "PARK VIEW/SOULE CLOSE I"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-008",
+    "name": "PARK VIEW/SOULE CLOSE II"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-009",
+    "name": "PARK VIEW/SOULE CLOSE III"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-010",
+    "name": "REEVE ROAD I"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-011",
+    "name": "REEVE ROAD II"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-012",
+    "name": "ONITOLO/OJORA ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-013",
+    "name": "GERRARD ROAD I"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-014",
+    "name": "GERRARD ROAD II"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-015",
+    "name": "MILVERTON ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-016",
+    "name": "ALEXANDER"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-017",
+    "name": "ONIKOYI ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-018",
+    "name": "OLOTO/ONISIWO ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-019",
+    "name": "FEMI OKUNNU/LATEEF JAKANDE"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-020",
+    "name": "BOURDILLION ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-021",
+    "name": "ONIRU/MOORE ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-022",
+    "name": "AROMIRE/OLUMEGBON"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-023",
+    "name": "RUMENS/OLAWALE DAWODU ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-024",
+    "name": "MACPHERSON AVENUE/ILADO CLOSE I"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-025",
+    "name": "MACPHERSON AVENUE/ILADO CLOSE II"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-026",
+    "name": "ADEYEMI LAWSON/ILU DRIVE"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-027",
+    "name": "ILABERE AVENUE"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-028",
+    "name": "OYINKAN B/STOP"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-029",
+    "name": "IPEWU/MEKUNWEN"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-030",
+    "name": "FALOMO"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-031",
+    "name": "FALOMO POLICE BARRACKS I"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-032",
+    "name": "FALOMO POLICE BARRACKS II"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-033",
+    "name": "FALOMO POLICE BARRACKS III"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-034",
+    "name": "FALOMO POLICE BARRACKS IV"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-035",
+    "name": "JUNCTION OF BAYO KUKU STR."
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-036",
+    "name": "OLU HOLLOW WAY JUNCTION. IKOYI"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-037",
+    "name": "45, CAMERON RD. OPP. COCACOLA"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-038",
+    "name": "OPEN SPACE AT OSBORNE FORESHORE ESTATE PHASE I"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-039",
+    "name": "OPEN SPACE AT OSBORNE FORESHORE ESTATE PHASE II"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-040",
+    "name": "HOUSE 36, LUGARD STREET"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-041",
+    "name": "BESIDE LAGOS PREPARATRY SCHOOL."
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-042",
+    "name": "33, GLOVER ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-043",
+    "name": "OPP. ENTRANCE THOMPSON AVENUE"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-044",
+    "name": "ENTRANCE OF IGE SHONUBI CR"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-045",
+    "name": "EXIT OF IGE SHONUBI CR"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-046",
+    "name": "OPP. 5 SOULE CLOSE, IKOYI"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-047",
+    "name": "OPP. HOUSE 9, BODE OLAJUMOKE CRESCENT"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-048",
+    "name": "BESIDE CLAPTON COURT"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-049",
+    "name": "6, MOSLEY JUNCTION, IKOYI"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-050",
+    "name": "FRONT OF NNPC"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-051",
+    "name": "ENTRANCE OF JABITA CLOSE"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-052",
+    "name": "JUNCTION OF BANANA ISLAND ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-053",
+    "name": "8, ONIKOYI ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-054",
+    "name": "OPEN SPACE BANANA ISLAND ESTATE"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-055",
+    "name": "OPP. FEMI OKUNNU/LATEEF JAKANDE, IKOYI"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-056",
+    "name": "BESIDE 17A BOURDILLON ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-057",
+    "name": "17A BOURDILLON ROAD"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-058",
+    "name": "FRONT OF ABRAHAMS COURT, IKOYI"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-059",
+    "name": "JUNCTION OF ILU DRIVE OFF ADEYEMI LAWSON"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-060",
+    "name": "ENTRANCE OF IKOYA OFF MACPHERSON"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-061",
+    "name": "JUNCTION OF OLADELE LAWORE DRIVE"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-062",
+    "name": "INSIDE IRETI PRIMARY SCHOOL, IKOYI"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-063",
+    "name": "ENTRANCE OF POLICE HOSPITAL"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-064",
+    "name": "BESIDE POLICE BARRACKS, IKOYI"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-065",
+    "name": "BESIDE POLICE BARRACKS OPP. ECOBANK,"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-066",
+    "name": "UNDER FALOMO BRIDGE"
+  },
+  {
+    "wardCode": "24-08-09",
+    "code": "24-08-09-067",
+    "name": "INFRONT OF AA COURT CLOSE OFF BOURDILLION RD"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-001",
+    "name": "OBALENDE PRY. SCH. I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-002",
+    "name": "OBALENDE PRY. SCH. II"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-003",
+    "name": "OBALENDE PRY. SCH. III"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-004",
+    "name": "OBALENDE PRY. SCH. IV"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-005",
+    "name": "IJEH HFP HOUSING ESTATE I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-006",
+    "name": "IJEH HOUSING ESTATE II"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-007",
+    "name": "IJEH HFP HOUSING ESTATE III"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-008",
+    "name": "IJEH HOUSING ESTATE IV"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-009",
+    "name": "EXIT OF IJEH HOUSING ESTATE"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-010",
+    "name": "NIGERIA GIRL'S GUIDE ASSOCIATION I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-011",
+    "name": "NIGERIA GIRL'S GUIDE ASSOCIATION II"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-012",
+    "name": "NIGERIA GIRL'S GUIDE ASSOCIATION III"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-013",
+    "name": "DODAN BARRACKS I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-014",
+    "name": "DODAN BARRACKS II"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-015",
+    "name": "DODAN BARRACKS III"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-016",
+    "name": "DODAN BARRACKS IV"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-017",
+    "name": "ETI-OSA HEALTH CENTRE"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-018",
+    "name": "POLICE BARRACKS I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-019",
+    "name": "POLICE BARRACKS II"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-020",
+    "name": "POLICE BARRACKS III"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-021",
+    "name": "KGIRLS MODERN ACADEMY"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-022",
+    "name": "KEFFI STREET/AUNTY AYO"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-023",
+    "name": "SCHOOL OF NURSING"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-024",
+    "name": "IGBO STR./AJENIYA STR. I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-025",
+    "name": "AJENIYA STR./OJO ST."
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-026",
+    "name": "ODO/ ST./KEFFI ST."
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-027",
+    "name": "ODO ST./OJO ST."
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-028",
+    "name": "ODO ST./IGBO ST."
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-029",
+    "name": "ODO ST."
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-030",
+    "name": "ST. GREGORY'S ROAD/ODO ST. I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-031",
+    "name": "ST. GREGORY'S ROAD/ODO ST. II"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-032",
+    "name": "ST. GREGORY'S ROAD/ODO ST. III"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-033",
+    "name": "ST. GREGORY'S COLLEGE I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-034",
+    "name": "ST. GREGORY'S COLLEGE II"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-035",
+    "name": "HOLY CHILD COLLEGE I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-036",
+    "name": "HOLY CHILD COLLEGE II"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-037",
+    "name": "HOLY CHILD COLLEGE III"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-038",
+    "name": "OBALENDE PRY SCHOOL GATE I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-039",
+    "name": "OBALENDE PRY SCHOOL GATE II"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-040",
+    "name": "OBALENDE PRY SCHOOL GATE III"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-041",
+    "name": "OPP. CENTRAL MOSQUE IJEH DOLPHIN BY KOSOFE RD."
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-042",
+    "name": "OPP. BLOCK 13, AGEGE LANE"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-043",
+    "name": "INSIDE NIGERIA GIRLS GUIDE ASSOCIATION I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-044",
+    "name": "INSIDE NIGERIA GIRLS GUIDE ASSOCIATION II"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-045",
+    "name": "BESIDE HOUSE 76, OBALENDE"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-046",
+    "name": "BESIDE 80 OBALENDE RD"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-047",
+    "name": "FRONT OF HEALTH CENTRE"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-048",
+    "name": "BESIDE POLICE BARRACK BY WOMENS BARRACK"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-049",
+    "name": "BESIDE BLOCK 6 OBALENDE POLICE BARRACK"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-050",
+    "name": "OPP. JUNCTION OF ELESHIN"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-051",
+    "name": "BESIDE AUNTY AYO INTERNATIONAL"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-052",
+    "name": "BESIDE KEFFI STREET/AUNTY AYO"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-053",
+    "name": "ENTRANCE KEFFI STREET/AUNTY AYO"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-054",
+    "name": "BESIDE 22, AWOLOWO RD"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-055",
+    "name": "IGBO STR./AJENIYA STR II"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-056",
+    "name": "BESIDE JUNCTION OF 62 AJENIYA"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-057",
+    "name": "BESIDE JUNCTION OF 62 AJENIYA I"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-058",
+    "name": "BESIDE NO 86, ODO OFF KEFFI STR"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-059",
+    "name": "BESIDE 32, IGBO STR"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-060",
+    "name": "FRONT OF 31 ODO STR OFF IGBO STR"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-061",
+    "name": "BESIDE NO 1, ODO SRT"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-062",
+    "name": "BESIDE NO 1, TOYAN STR"
+  },
+  {
+    "wardCode": "24-08-10",
+    "code": "24-08-10-063",
+    "name": "BESIDE NO 48 TOYAN STR"
+  }
+]

@@ -1,9 +1,5 @@
-import React from 'react'
+import { LandingPage } from "@/components/layout/landing-page";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
+export default function HomePage() {
+  return <LandingPage />;
 }
-
-export default page
