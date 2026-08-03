@@ -1,4 +1,3 @@
-import { createClient } from "@/lib/supabase/server";
 import { adminClient } from "@/lib/supabase/admin";
 
 export class ApplicationService {
