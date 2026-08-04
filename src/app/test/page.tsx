@@ -1,13 +1,11 @@
-import { createClient } from "@/lib/supabase/server";
+import { PollingUnitService } from "@/services/pollingUnitService";
 
 export default async function TestPage() {
-  const supabase = await createClient();
-
-  const { data, error } = await supabase
-    .from("polling_units")
-    .select("id, code, name, ward_id, wards(code)");
+  const pollingUnits = await PollingUnitService.getAll();
 
   return (
-    <pre>{JSON.stringify({ data, error }, null, 2)}</pre>
+    <pre>
+      {JSON.stringify(pollingUnits.slice(0, 10), null, 2)}
+    </pre>
   );
 }
