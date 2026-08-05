@@ -10,7 +10,7 @@ export function LandingPage() {
             <div className="flex flex-col justify-center">
               <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-sm font-medium text-amber-800">
                 <BadgeCheck className="h-4 w-4" />
-                Obidient Movement · Eti-Osa LGA
+                NDC · Eti-Osa LGA
               </div>
 
               <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
