@@ -18,9 +18,7 @@ export function LandingPage() {
               </h1>
 
               <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-                Join the movement by expressing interest to serve as a polling unit leader in Eti-Osa LGA.
-                This streamlined process helps us verify your details, confirm your ward and polling unit, and
-                keep everything organized for the next phase.
+                This streamlined process is targeted at verifying details, confirm ward and polling unit, and keep everything organized for the next phase. submission of this expression of interest form does not guarantee appointment. All the application will be subject to approval terms, conditions and selection criteria of the structure.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
