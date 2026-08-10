@@ -196,124 +196,115 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
         )}
 
         {step === 2 && (
-          <div className="grid gap-6 md:grid-cols-2">
-            <div>
-              <label className="mb-2 block text-sm font-medium text-slate-700">
-                Do you have a smartphone?
-              </label>
-              <select
-                {...register("has_smartphone")}
-                className="w-full rounded-xl border border-slate-300 px-4 py-3"
-              >
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
-              {errors.has_smartphone && (
-                <p className="mt-2 text-sm text-red-600">
-                  {errors.has_smartphone.message}
-                </p>
-              )}
-            </div>
-            <div>
-              <label className="mb-2 block text-sm font-medium text-slate-700">
-                Ward
-              </label>
-              <span className="block text-sm text-slate-500 italic">
-                Ward (Question/clarity? call the organizing secretary -
-                07038905250):
-              </span>
-              <select
-                {...register("ward_code")}
-                className="w-full rounded-xl border border-slate-300 px-4 py-3"
-              >
-                <option value="">Select a ward</option>
-                {wards.map((ward) => (
-                  <option key={ward.code} value={ward.code}>
-                    {ward.name}
-                  </option>
-                ))}
-              </select>
-              {errors.ward_code && (
-                <p className="mt-2 text-sm text-red-600">
-                  {errors.ward_code.message}
-                </p>
-              )}
-            </div>
-            <div className="md:col-span-2">
-              <label className="mb-2 block text-sm font-medium text-slate-700">
-                Polling unit
-              </label>
-              <span className="block text-sm text-slate-500 italic">
-                Polling unit (Question/clarity? call the organizing secretary -
-                07038905250):
-              </span>
-              <select
-                {...register("polling_unit_code")}
-                className="w-full rounded-xl border border-slate-300 px-4 py-3"
-                disabled={!selectedWardCode}
-              >
-                <option value="">
-                  {selectedWardCode
-                    ? "Select a polling unit"
-                    : "Choose a ward first"}
-                </option>
-                {filteredPollingUnits.map((unit) => (
-                  <option key={unit.code} value={unit.code}>
-                    {unit.name}
-                  </option>
-                ))}
-              </select>
-              {errors.polling_unit_code && (
-                <p className="mt-2 text-sm text-red-600">
-                  {errors.polling_unit_code.message}
-                </p>
-              )}
-            </div>
-          </div>
-        )}
-
-        {step === 3 && (
           <>
-            <p className="mb-4 text-sm text-slate-500 italic">
-              Upload NDC ONLINE MEMBERSHIP REGISTRATION ID CARD SECTION 
-              Upload NDC online membership registration ID card. (no party membership ID card? Click&register:
-              https://ndcregister.com/membership/become-without-nin/ or call the organizing secretary for assistance - 07038905250)
+            <p className="mb-4 text-sm leading-7 text-slate-600 italic">
+              Ward (Question/clarity? call the organizing secretary -
+              07038905250):
             </p>
             <div className="grid gap-6 md:grid-cols-2">
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">
-                  Membership card upload
+                  Do you have a smartphone?
                 </label>
-                <input
-                  type="file"
-                  accept="image/*,.pdf"
+                <select
+                  {...register("has_smartphone")}
                   className="w-full rounded-xl border border-slate-300 px-4 py-3"
-                  {...register("membership_card")}
-                />
-                {errors.membership_card && (
+                >
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                {errors.has_smartphone && (
                   <p className="mt-2 text-sm text-red-600">
-                    {String(errors.membership_card.message)}
+                    {errors.has_smartphone.message}
                   </p>
                 )}
               </div>
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">
-                  Passport upload
+                  Ward
                 </label>
-                <input
-                  type="file"
-                  accept="image/*"
+                <select
+                  {...register("ward_code")}
                   className="w-full rounded-xl border border-slate-300 px-4 py-3"
-                  {...register("passport")}
-                />
-                {errors.passport && (
+                >
+                  <option value="">Select a ward</option>
+                  {wards.map((ward) => (
+                    <option key={ward.code} value={ward.code}>
+                      {ward.name}
+                    </option>
+                  ))}
+                </select>
+                {errors.ward_code && (
                   <p className="mt-2 text-sm text-red-600">
-                    {String(errors.passport.message)}
+                    {errors.ward_code.message}
+                  </p>
+                )}
+              </div>
+              <div className="md:col-span-2">
+                <label className="mb-2 block text-sm font-medium text-slate-700">
+                  Polling unit
+                </label>
+                <select
+                  {...register("polling_unit_code")}
+                  className="w-full rounded-xl border border-slate-300 px-4 py-3"
+                  disabled={!selectedWardCode}
+                >
+                  <option value="">
+                    {selectedWardCode
+                      ? "Select a polling unit"
+                      : "Choose a ward first"}
+                  </option>
+                  {filteredPollingUnits.map((unit) => (
+                    <option key={unit.code} value={unit.code}>
+                      {unit.name}
+                    </option>
+                  ))}
+                </select>
+                {errors.polling_unit_code && (
+                  <p className="mt-2 text-sm text-red-600">
+                    {errors.polling_unit_code.message}
                   </p>
                 )}
               </div>
             </div>
           </>
+        )}
+
+        {step === 3 && (
+          <div className="grid gap-6 md:grid-cols-2">
+            <div>
+              <label className="mb-2 block text-sm font-medium text-slate-700">
+                Membership card upload
+              </label>
+              <input
+                type="file"
+                accept="image/*,.pdf"
+                className="w-full rounded-xl border border-slate-300 px-4 py-3"
+                {...register("membership_card")}
+              />
+              {errors.membership_card && (
+                <p className="mt-2 text-sm text-red-600">
+                  {String(errors.membership_card.message)}
+                </p>
+              )}
+            </div>
+            <div>
+              <label className="mb-2 block text-sm font-medium text-slate-700">
+                Passport upload
+              </label>
+              <input
+                type="file"
+                accept="image/*"
+                className="w-full rounded-xl border border-slate-300 px-4 py-3"
+                {...register("passport")}
+              />
+              {errors.passport && (
+                <p className="mt-2 text-sm text-red-600">
+                  {String(errors.passport.message)}
+                </p>
+              )}
+            </div>
+          </div>
         )}
 
         {step === 4 && (
