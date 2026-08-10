@@ -20,8 +20,15 @@ export default async function ApplyPage() {
           </h1>
           <p className="mt-4 text-lg leading-8 text-slate-600">
             Note: ALL APPLICANTS MUST BE A REGISTERED MEMBER OF THE NDC PARTY .
-            - submission of this expression of interest form does not guarantee appointment. All the application will be subject to approval terms, conditions and selection criteria of the structure. 
-            - This streamlined process is targeted at verifying details, confirm ward and polling unit, and keep everything organized for the next phase⁠.
+            <ul className="mt-2 list-inside list-disc text-sm text-slate-500">
+              <li className="mb-2">
+                Submission of this expression of interest form does not
+                guarantee appointment. All the application will be subject to approval terms, conditions and selection criteria of the structure.
+              </li>
+              <li className="mb-2">
+                This streamlined process is targeted at verifying details, confirm ward and polling unit, and keep everything organized for the next phase⁠.
+              </li>
+            </ul>
           </p>
         </div>
 
