@@ -198,8 +198,7 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
         {step === 2 && (
           <>
             <p className="mb-4 text-sm leading-7 text-slate-600 italic">
-              Ward (Question/clarity? call the organizing secretary -
-              07038905250):
+              For any question or clarity on Ward and Pollin Units, call the organizing secretary (07038905250):
             </p>
             <div className="grid gap-6 md:grid-cols-2">
               <div>
