@@ -31,14 +31,17 @@ export default async function ApplicantDetailPage({
   const { id } = await params;
   const supabase = adminClient;
 
-  const { data: application } = await supabase
+  const { data: application, error: applicationError } = await supabase
     .from("applications")
     .select(
-      "id, status, created_at, surname, first_name, other_names, email, phone, has_smartphone, ward_id, polling_unit_id, membership_card_url, passport_url"
+      "id, status, created_at, surname, first_name, other_names, email, phone, has_smartphone, ward_id, polling_unit_id, membership_card_url, passport_url",
     )
     .eq("id", id)
     .single();
 
+  if (applicationError) {
+    console.error("Failed to load application:", applicationError);
+  }
   if (!application) {
     return (
       <main className="min-h-screen bg-slate-50 px-6 py-16">
@@ -95,7 +98,7 @@ export default async function ApplicantDetailPage({
 
               <span
                 className={`rounded-full px-3 py-1 text-sm font-medium uppercase ${statusClass(
-                  application.status
+                  application.status,
                 )}`}
               >
                 {application.status}
@@ -150,9 +153,7 @@ export default async function ApplicantDetailPage({
               <div className="flex items-center gap-2 text-slate-900">
                 <FileText className="h-5 w-5 text-amber-600" />
 
-                <h2 className="text-lg font-semibold">
-                  Ward and polling unit
-                </h2>
+                <h2 className="text-lg font-semibold">Ward and polling unit</h2>
               </div>
 
               <div className="mt-4 flex flex-wrap gap-3 text-sm text-slate-600">
@@ -185,11 +186,7 @@ export default async function ApplicantDetailPage({
                     value={application.id}
                   />
 
-                  <input
-                    type="hidden"
-                    name="status"
-                    value="approved"
-                  />
+                  <input type="hidden" name="status" value="approved" />
 
                   <input
                     type="hidden"
@@ -210,11 +207,7 @@ export default async function ApplicantDetailPage({
                     value={application.id}
                   />
 
-                  <input
-                    type="hidden"
-                    name="status"
-                    value="rejected"
-                  />
+                  <input type="hidden" name="status" value="rejected" />
 
                   <input
                     type="hidden"
