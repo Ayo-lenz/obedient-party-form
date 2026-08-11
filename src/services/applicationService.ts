@@ -11,6 +11,7 @@ export class ApplicationService {
     passport_url: string;
     ward_id: string;
     polling_unit_id: string;
+    email: string;
   }) {
     const { data, error } = await adminClient
       .from("applications")
