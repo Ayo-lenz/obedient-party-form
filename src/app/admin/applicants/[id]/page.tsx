@@ -40,7 +40,8 @@ export default async function ApplicantDetailPage({
     .single();
 
   if (applicationError) {
-    console.error("Failed to load application:", applicationError);
+    console.error("APPLICATION DETAIL ERROR:", applicationError);
+    console.error("APPLICATION ID:", id);
   }
   if (!application) {
     return (
