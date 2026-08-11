@@ -28,6 +28,7 @@ const schema = z.object({
   surname: z.string().min(1, "Surname is required"),
   first_name: z.string().min(1, "First name is required"),
   other_names: z.string().optional(),
+  email: z.string().min(1, "Email is required").email("Enter a valid email address"),
   phone: z
     .string()
     .regex(/^(\+234|234|0)\d{10}$/, "Enter a valid Nigerian phone number"),
@@ -85,6 +86,7 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
     formData.append("surname", values.surname);
     formData.append("first_name", values.first_name);
     formData.append("other_names", values.other_names ?? "");
+    formData.append("email", values.email);
     formData.append("phone", values.phone);
     formData.append("has_smartphone", values.has_smartphone);
     formData.append("ward_code", values.ward_code);
@@ -180,6 +182,21 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
             </div>
             <div>
               <label className="mb-2 block text-sm font-medium text-slate-700">
+                Email address
+              </label>
+              <input
+                type="email"
+                {...register("email")}
+                className="w-full rounded-xl border border-slate-300 px-4 py-3"
+              />
+              {errors.email && (
+                <p className="mt-2 text-sm text-red-600">
+                  {errors.email.message}
+                </p>
+              )}
+            </div>
+            <div>
+              <label className="mb-2 block text-sm font-medium text-slate-700">
                 Phone number
               </label>
               <input
@@ -270,40 +287,60 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
         )}
 
         {step === 3 && (
-          <div className="grid gap-6 md:grid-cols-2">
-            <div>
-              <label className="mb-2 block text-sm font-medium text-slate-700">
-                Membership card upload
-              </label>
-              <input
-                type="file"
-                accept="image/*,.pdf"
-                className="w-full rounded-xl border border-slate-300 px-4 py-3"
-                {...register("membership_card")}
-              />
-              {errors.membership_card && (
-                <p className="mt-2 text-sm text-red-600">
-                  {String(errors.membership_card.message)}
-                </p>
-              )}
+          <>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold text-slate-900">
+                Upload NDC ONLINE MEMBERSHIP REGISTRATION ID CARD SECTION
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-600">
+                Upload NDC online membership registration ID card. (no party
+                membership ID card? Click&register:{" "}
+                <a
+                  href="https://ndcregister.com/membership/become-without-nin/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-amber-600 underline underline-offset-4"
+                >
+                  https://ndcregister.com/membership/become-without-nin/
+                </a>{" "}
+                or call the organizing secretary for assistance - 07038905250)
+              </p>
             </div>
-            <div>
-              <label className="mb-2 block text-sm font-medium text-slate-700">
-                Passport upload
-              </label>
-              <input
-                type="file"
-                accept="image/*"
-                className="w-full rounded-xl border border-slate-300 px-4 py-3"
-                {...register("passport")}
-              />
-              {errors.passport && (
-                <p className="mt-2 text-sm text-red-600">
-                  {String(errors.passport.message)}
-                </p>
-              )}
+            <div className="grid gap-6 md:grid-cols-2">
+              <div>
+                <label className="mb-2 block text-sm font-medium text-slate-700">
+                  Membership card upload
+                </label>
+                <input
+                  type="file"
+                  accept="image/*,.pdf"
+                  className="w-full rounded-xl border border-slate-300 px-4 py-3"
+                  {...register("membership_card")}
+                />
+                {errors.membership_card && (
+                  <p className="mt-2 text-sm text-red-600">
+                    {String(errors.membership_card.message)}
+                  </p>
+                )}
+              </div>
+              <div>
+                <label className="mb-2 block text-sm font-medium text-slate-700">
+                  Passport upload
+                </label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  className="w-full rounded-xl border border-slate-300 px-4 py-3"
+                  {...register("passport")}
+                />
+                {errors.passport && (
+                  <p className="mt-2 text-sm text-red-600">
+                    {String(errors.passport.message)}
+                  </p>
+                )}
+              </div>
             </div>
-          </div>
+          </>
         )}
 
         {step === 4 && (

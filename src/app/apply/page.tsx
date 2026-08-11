@@ -18,18 +18,24 @@ export default async function ApplyPage() {
           <h1 className="mt-3 text-4xl font-semibold text-slate-900 sm:text-5xl">
             NDC Et-Osa LGA polling unit leaders expression of interest form
           </h1>
-          <p className="mt-4 text-lg leading-8 text-slate-600">
-            Note: ALL APPLICANTS MUST BE A REGISTERED MEMBER OF THE NDC PARTY .
+          <div className="mt-4 text-lg leading-8 text-slate-600">
+            <p>
+              Note: ALL APPLICANTS MUST BE A REGISTERED MEMBER OF THE NDC PARTY.
+            </p>
             <ul className="mt-2 list-inside list-disc text-sm text-slate-500">
               <li className="mb-2">
                 Submission of this expression of interest form does not
-                guarantee appointment. All the application will be subject to approval terms, conditions and selection criteria of the structure.
+                guarantee appointment. All the application will be subject to
+                approval terms, conditions and selection criteria of the
+                structure.
               </li>
               <li className="mb-2">
-                This streamlined process is targeted at verifying details, confirm ward and polling unit, and keep everything organized for the next phase⁠.
+                This streamlined process is targeted at verifying details,
+                confirm ward and polling unit, and keep everything organized for
+                the next phase⁠.
               </li>
             </ul>
-          </p>
+          </div>
         </div>
 
         <ApplicationForm
