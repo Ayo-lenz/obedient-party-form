@@ -96,7 +96,7 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
           </Link>
         </div>
 
-        <div className="mb-6 grid gap-3 md:grid-cols-3">
+        <div className="mb-6 grid gap-3 md:grid-cols-4">
           <div className="rounded-[1.1rem] border border-slate-200 bg-white p-4 shadow-sm">
             <p className="text-sm text-slate-500">Visible applicants</p>
             <p className="mt-2 text-2xl font-semibold text-slate-900">{applicationRows.length}</p>
@@ -105,9 +105,13 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
             <p className="text-sm text-slate-500">Pending review</p>
             <p className="mt-2 text-2xl font-semibold text-slate-900">{pendingCount ?? 0}</p>
           </div>
-          <div className="rounded-[1.1rem] border border-slate-200 bg-white p-4 shadow-sm">
-            <p className="text-sm text-slate-500">Approved / rejected</p>
-            <p className="mt-2 text-2xl font-semibold text-slate-900">{(approvedCount ?? 0) + (rejectedCount ?? 0)}</p>
+          <div className="rounded-[1.1rem] border border-emerald-200 bg-emerald-50 p-4 shadow-sm">
+            <p className="text-sm text-emerald-700">Approved</p>
+            <p className="mt-2 text-2xl font-semibold text-emerald-900">{approvedCount ?? 0}</p>
+          </div>
+          <div className="rounded-[1.1rem] border border-red-200 bg-red-50 p-4 shadow-sm">
+            <p className="text-sm text-red-700">Rejected</p>
+            <p className="mt-2 text-2xl font-semibold text-red-900">{rejectedCount ?? 0}</p>
           </div>
         </div>
 
@@ -139,20 +143,32 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
                         <Eye className="h-4 w-4" />
                         View
                       </Link>
-                      <form action="/admin/applicants/update" method="POST">
+                      <form action="/admin/applicants/update" method="POST" className="space-y-2">
                         <input type="hidden" name="application_id" value={application.id} />
                         <input type="hidden" name="status" value="approved" />
                         <input type="hidden" name="redirect_to" value={`/admin/applicants?q=${q}&status=${status}`} />
-                        <button className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-700">
+                        <textarea
+                          name="comment"
+                          rows={2}
+                          placeholder="Approval comment"
+                          className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 outline-none ring-0 placeholder:text-slate-400"
+                        />
+                        <button className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-700">
                           <CheckCircle2 className="h-4 w-4" />
                           Approve
                         </button>
                       </form>
-                      <form action="/admin/applicants/update" method="POST">
+                      <form action="/admin/applicants/update" method="POST" className="space-y-2">
                         <input type="hidden" name="application_id" value={application.id} />
                         <input type="hidden" name="status" value="rejected" />
                         <input type="hidden" name="redirect_to" value={`/admin/applicants?q=${q}&status=${status}`} />
-                        <button className="inline-flex items-center gap-2 rounded-full border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
+                        <textarea
+                          name="comment"
+                          rows={2}
+                          placeholder="Rejection reason"
+                          className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 outline-none ring-0 placeholder:text-slate-400"
+                        />
+                        <button className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
                           <XCircle className="h-4 w-4" />
                           Reject
                         </button>

@@ -34,7 +34,7 @@ export default async function ApplicantDetailPage({
   const { data: application, error: applicationError } = await supabase
     .from("applications")
     .select(
-      "id, status, created_at, surname, first_name, other_names, email, phone, home_address, has_smartphone, ward_id, polling_unit_id, membership_card_url, passport_url",
+      "id, status, created_at, surname, first_name, other_names, email, phone, home_address, review_comment, has_smartphone, ward_id, polling_unit_id, membership_card_url, passport_url",
     )
     .eq("id", id)
     .single();
@@ -156,6 +156,13 @@ export default async function ApplicantDetailPage({
               </p>
             </div>
 
+            <div className="mt-8 rounded-[1.1rem] border border-slate-200 bg-slate-50 p-5">
+              <p className="text-sm text-slate-500">Decision comment</p>
+              <p className="mt-2 whitespace-pre-wrap font-semibold text-slate-900">
+                {application.review_comment ?? "—"}
+              </p>
+            </div>
+
             {/* Ward and polling unit */}
             <div className="mt-8 rounded-[1.1rem] border border-slate-200 bg-slate-50 p-5">
               <div className="flex items-center gap-2 text-slate-900">
@@ -187,7 +194,7 @@ export default async function ApplicantDetailPage({
               </div>
 
               <div className="mt-5 space-y-3">
-                <form action="/admin/applicants/update" method="POST">
+                <form action="/admin/applicants/update" method="POST" className="space-y-3">
                   <input
                     type="hidden"
                     name="application_id"
@@ -202,13 +209,20 @@ export default async function ApplicantDetailPage({
                     value="/admin/applicants"
                   />
 
+                  <textarea
+                    name="comment"
+                    rows={4}
+                    placeholder="Add approval comment"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-700 outline-none placeholder:text-slate-400"
+                  />
+
                   <button className="flex w-full items-center justify-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700">
                     <CheckCircle2 className="h-4 w-4" />
                     Approve application
                   </button>
                 </form>
 
-                <form action="/admin/applicants/update" method="POST">
+                <form action="/admin/applicants/update" method="POST" className="space-y-3">
                   <input
                     type="hidden"
                     name="application_id"
@@ -221,6 +235,13 @@ export default async function ApplicantDetailPage({
                     type="hidden"
                     name="redirect_to"
                     value="/admin/applicants"
+                  />
+
+                  <textarea
+                    name="comment"
+                    rows={4}
+                    placeholder="Add rejection reason"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-700 outline-none placeholder:text-slate-400"
                   />
 
                   <button className="flex w-full items-center justify-center gap-2 rounded-full border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
