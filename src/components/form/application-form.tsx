@@ -32,6 +32,7 @@ const schema = z.object({
   phone: z
     .string()
     .regex(/^(\+234|234|0)\d{10}$/, "Enter a valid Nigerian phone number"),
+  home_address: z.string().min(1, "Home address is required"),
   has_smartphone: z.enum(["yes", "no"]),
   ward_code: z.string().min(1, "Select a ward"),
   polling_unit_code: z.string().min(1, "Select a polling unit"),
@@ -88,6 +89,7 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
     formData.append("other_names", values.other_names ?? "");
     formData.append("email", values.email);
     formData.append("phone", values.phone);
+    formData.append("home_address", values.home_address);
     formData.append("has_smartphone", values.has_smartphone);
     formData.append("ward_code", values.ward_code);
     formData.append("polling_unit_code", values.polling_unit_code);
@@ -206,6 +208,22 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
               {errors.phone && (
                 <p className="mt-2 text-sm text-red-600">
                   {errors.phone.message}
+                </p>
+              )}
+            </div>
+            <div className="md:col-span-2">
+              <label className="mb-2 block text-sm font-medium text-slate-700">
+                Home address
+              </label>
+              <textarea
+                {...register("home_address")}
+                rows={3}
+                className="w-full rounded-xl border border-slate-300 px-4 py-3"
+                placeholder="Enter your home address"
+              />
+              {errors.home_address && (
+                <p className="mt-2 text-sm text-red-600">
+                  {errors.home_address.message}
                 </p>
               )}
             </div>

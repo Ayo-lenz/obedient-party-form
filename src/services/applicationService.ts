@@ -6,6 +6,7 @@ export class ApplicationService {
     first_name: string;
     other_names?: string | null;
     phone: string;
+    home_address: string;
     has_smartphone: boolean;
     membership_card_url: string;
     passport_url: string;
