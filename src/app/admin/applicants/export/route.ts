@@ -5,7 +5,7 @@ export async function GET() {
   const supabase = adminClient;
   const { data: applications } = await supabase
     .from("applications")
-    .select("id, status, surname, first_name, other_names, phone, created_at")
+    .select("id, status, surname, first_name, other_names, phone, home_address, created_at")
     .order("created_at", { ascending: false });
 
   const rows = (applications ?? []).map((application: {
@@ -15,6 +15,7 @@ export async function GET() {
     first_name: string;
     other_names?: string | null;
     phone: string;
+    home_address?: string | null;
     created_at: string;
   }) => [
     application.id,
@@ -22,12 +23,13 @@ export async function GET() {
     application.surname,
     application.other_names ?? "",
     application.phone,
+    application.home_address ?? "",
     application.status,
     new Date(application.created_at).toISOString(),
   ]);
 
   const csv = [
-    ["id", "first_name", "surname", "other_names", "phone", "status", "created_at"].join(","),
+    ["id", "first_name", "surname", "other_names", "phone", "home_address", "status", "created_at"].join(","),
     ...rows.map((row) => row.map((value) => `"${String(value).replaceAll('"', '""')}"`).join(",")),
   ].join("\n");
 

@@ -34,7 +34,7 @@ export default async function ApplicantDetailPage({
   const { data: application, error: applicationError } = await supabase
     .from("applications")
     .select(
-      "id, status, created_at, surname, first_name, other_names, email, phone, has_smartphone, ward_id, polling_unit_id, membership_card_url, passport_url",
+      "id, status, created_at, surname, first_name, other_names, email, phone, home_address, has_smartphone, ward_id, polling_unit_id, membership_card_url, passport_url",
     )
     .eq("id", id)
     .single();
@@ -147,6 +147,13 @@ export default async function ApplicantDetailPage({
                   {new Date(application.created_at).toLocaleString()}
                 </p>
               </div>
+            </div>
+
+            <div className="mt-8 rounded-[1.1rem] border border-slate-200 bg-slate-50 p-5">
+              <p className="text-sm text-slate-500">Home address</p>
+              <p className="mt-2 whitespace-pre-wrap font-semibold text-slate-900">
+                {application.home_address ?? "—"}
+              </p>
             </div>
 
             {/* Ward and polling unit */}

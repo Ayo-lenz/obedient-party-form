@@ -21,7 +21,7 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
   const status = params?.status ?? "all";
 
   const supabase = adminClient;
-  let query = supabase.from("applications").select("id, status, surname, first_name, phone, created_at, ward_id, polling_unit_id").order("created_at", { ascending: false });
+  let query = supabase.from("applications").select("id, status, surname, first_name, phone, home_address, created_at, ward_id, polling_unit_id").order("created_at", { ascending: false });
 
   if (q) {
     query = query.or(`surname.ilike.%${q}%,first_name.ilike.%${q}%,phone.ilike.%${q}%`);
@@ -43,6 +43,7 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
     first_name: string;
     surname: string;
     phone: string;
+    home_address?: string | null;
     status: string;
     ward_id?: string | null;
     polling_unit_id?: string | null;
@@ -116,6 +117,7 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
               <tr>
                 <th className="px-4 py-3 font-medium">Applicant</th>
                 <th className="px-4 py-3 font-medium">Phone</th>
+                <th className="px-4 py-3 font-medium">Home address</th>
                 <th className="px-4 py-3 font-medium">Status</th>
                 <th className="px-4 py-3 font-medium">Ward / PU</th>
                 <th className="px-4 py-3 font-medium">Actions</th>
@@ -126,6 +128,7 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
                 <tr key={application.id}>
                   <td className="px-4 py-3 font-medium text-slate-900">{application.first_name} {application.surname}</td>
                   <td className="px-4 py-3 text-slate-600">{application.phone}</td>
+                  <td className="px-4 py-3 text-slate-600 max-w-[220px] truncate" title={application.home_address ?? ""}>{application.home_address ?? "—"}</td>
                   <td className="px-4 py-3">
                     <span className={`rounded-full px-3 py-1 text-xs font-medium uppercase ${statusClass(application.status)}`}>{application.status}</span>
                   </td>
