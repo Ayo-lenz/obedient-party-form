@@ -14,11 +14,15 @@ envContent.split("\n").forEach((line) => {
 });
 
 const supabaseUrl = env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabaseKey = env.SUPABASE_SERVICE_ROLE_KEY || env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
   console.error("Missing Supabase environment variables");
   process.exit(1);
+}
+
+if (!env.SUPABASE_SERVICE_ROLE_KEY) {
+  console.warn("Warning: SUPABASE_SERVICE_ROLE_KEY is not set; writes may fail under row-level security.");
 }
 
 const supabase = createClient(supabaseUrl, supabaseKey);
@@ -35,18 +39,41 @@ async function runSeed() {
 
     console.log(`Found ${wards.length} wards and ${pollingUnits.length} polling units`);
 
-    // Insert wards
+    // Insert or update wards
     console.log("\nInserting wards...");
     for (const ward of wards) {
       try {
-        const { data, error } = await supabase
+        const { data: existingWard, error: selectError } = await supabase
           .from("wards")
-          .upsert({ code: ward.code, name: ward.name }, { onConflict: "code" });
+          .select("id")
+          .eq("code", ward.code)
+          .maybeSingle();
 
-        if (error) {
-          console.error(`Error inserting ward ${ward.code}:`, error);
+        if (selectError && selectError.code !== "PGRST116") {
+          throw selectError;
+        }
+
+        if (existingWard) {
+          const { error } = await supabase
+            .from("wards")
+            .update({ name: ward.name })
+            .eq("id", existingWard.id);
+
+          if (error) {
+            console.error(`Error updating ward ${ward.code}:`, error);
+          } else {
+            console.log(`✓ Ward ${ward.code} updated`);
+          }
         } else {
-          console.log(`✓ Ward ${ward.code} inserted`);
+          const { error } = await supabase
+            .from("wards")
+            .insert({ code: ward.code, name: ward.name });
+
+          if (error) {
+            console.error(`Error inserting ward ${ward.code}:`, error);
+          } else {
+            console.log(`✓ Ward ${ward.code} inserted`);
+          }
         }
       } catch (e) {
         console.error(`Exception inserting ward ${ward.code}:`, e);
@@ -59,24 +86,47 @@ async function runSeed() {
 
     console.log(`Ward map has ${wardMap.size} entries`);
 
-    // Insert polling units
+    // Insert or update polling units
     console.log("\nInserting polling units...");
     for (const unit of pollingUnits) {
-      const wardId = wardMap.get(unit.wardCode); // Use wardCode, not ward_code
+      const wardId = wardMap.get(unit.wardCode);
       if (!wardId) {
-        console.warn(`⚠ Ward ID not found for ward code ${unit.ward_code}, skipping polling unit ${unit.code}`);
+        console.warn(`⚠ Ward ID not found for ward code ${unit.wardCode}, skipping polling unit ${unit.code}`);
         continue;
       }
 
       try {
-        const { data, error } = await supabase
+        const { data: existingUnit, error: selectError } = await supabase
           .from("polling_units")
-          .upsert({ ward_id: wardId, name: unit.name, code: unit.code }, { onConflict: "code" });
+          .select("id")
+          .eq("code", unit.code)
+          .maybeSingle();
 
-        if (error) {
-          console.error(`Error inserting polling unit ${unit.code}:`, error);
+        if (selectError && selectError.code !== "PGRST116") {
+          throw selectError;
+        }
+
+        if (existingUnit) {
+          const { error } = await supabase
+            .from("polling_units")
+            .update({ ward_id: wardId, name: unit.name })
+            .eq("id", existingUnit.id);
+
+          if (error) {
+            console.error(`Error updating polling unit ${unit.code}:`, error);
+          } else {
+            console.log(`✓ Polling unit ${unit.code} updated`);
+          }
         } else {
-          console.log(`✓ Polling unit ${unit.code} inserted`);
+          const { error } = await supabase
+            .from("polling_units")
+            .insert({ ward_id: wardId, name: unit.name, code: unit.code });
+
+          if (error) {
+            console.error(`Error inserting polling unit ${unit.code}:`, error);
+          } else {
+            console.log(`✓ Polling unit ${unit.code} inserted`);
+          }
         }
       } catch (e) {
         console.error(`Exception inserting polling unit ${unit.code}:`, e);
