@@ -58,6 +58,10 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
     },
   });
 
+  // preserve register handlers for file inputs so we don't break the native file dialog
+  const membershipRegister = register("membership_card");
+  const passportRegister = register("passport");
+
   const selectedWardCode = watch("ward_code");
 
   const filteredPollingUnits = useMemo(() => {
@@ -203,8 +207,9 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
                 type="file"
                 accept="image/*,.pdf"
                 className="w-full rounded-xl border border-slate-300 px-4 py-3"
-                {...register("membership_card")}
+                {...membershipRegister}
                 onChange={(e) => {
+                  membershipRegister.onChange?.(e as any);
                   const file = (e.target as HTMLInputElement).files?.[0] ?? null;
                   setValue("membership_card", file as any);
                 }}
@@ -217,8 +222,9 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
                 type="file"
                 accept="image/*"
                 className="w-full rounded-xl border border-slate-300 px-4 py-3"
-                {...register("passport")}
+                {...passportRegister}
                 onChange={(e) => {
+                  passportRegister.onChange?.(e as any);
                   const file = (e.target as HTMLInputElement).files?.[0] ?? null;
                   setValue("passport", file as any);
                 }}
