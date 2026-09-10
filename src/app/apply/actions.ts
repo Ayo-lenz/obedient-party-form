@@ -11,11 +11,9 @@ const schema = z.object({
   first_name: z.string().min(1),
   other_names: z.string().optional(),
   phone: z.string().regex(/^(\+234|234|0)\d{10}$/),
-  home_address: z.string().min(1, "Home address is required"),
   has_smartphone: z.enum(["yes", "no"]),
   ward_code: z.string().min(1),
   polling_unit_code: z.string().min(1),
-  email: z.string().min(1, "Email is required").email("Enter a valid email address"),
   membership_card: z.custom<File>((value) => value instanceof File && value.size > 0),
   passport: z.custom<File>((value) => value instanceof File && value.size > 0),
 });
@@ -25,9 +23,7 @@ export async function submitApplication(formData: FormData) {
     surname: String(formData.get("surname") ?? ""),
     first_name: String(formData.get("first_name") ?? ""),
     other_names: String(formData.get("other_names") ?? ""),
-    email: String(formData.get("email") ?? ""),
     phone: String(formData.get("phone") ?? ""),
-    home_address: String(formData.get("home_address") ?? ""),
     has_smartphone: String(formData.get("has_smartphone") ?? "yes"),
     ward_code: String(formData.get("ward_code") ?? ""),
     polling_unit_code: String(formData.get("polling_unit_code") ?? ""),
@@ -75,13 +71,11 @@ export async function submitApplication(formData: FormData) {
     first_name: parsed.data.first_name,
     other_names: parsed.data.other_names || null,
     phone: parsed.data.phone,
-    home_address: parsed.data.home_address,
     has_smartphone: parsed.data.has_smartphone === "yes",
     membership_card_url: membershipCardUrl,
     passport_url: passportUrl,
     ward_id: wardData.id,
     polling_unit_id: pollingUnitData.id,
-    email: parsed.data.email
   });
 
   redirect(`/success?reference=${reference}`);

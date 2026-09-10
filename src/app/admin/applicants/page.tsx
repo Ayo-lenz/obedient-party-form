@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CheckCircle2, Download, Eye, Search, XCircle } from "lucide-react";
 import { requireAdmin } from "@/lib/admin-auth";
-import { adminClient } from "@/lib/supabase/admin";
+import { createClient } from "@/lib/supabase/server";
 
 function statusClass(status: string) {
   switch (status) {
@@ -20,8 +20,8 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
   const q = params?.q ?? "";
   const status = params?.status ?? "all";
 
-  const supabase = adminClient;
-  let query = supabase.from("applications").select("id, status, surname, first_name, phone, home_address, created_at, ward_id, polling_unit_id").order("created_at", { ascending: false });
+  const supabase = await createClient();
+  let query = supabase.from("applications").select("id, status, surname, first_name, phone, created_at, ward_id, polling_unit_id").order("created_at", { ascending: false });
 
   if (q) {
     query = query.or(`surname.ilike.%${q}%,first_name.ilike.%${q}%,phone.ilike.%${q}%`);
@@ -43,7 +43,6 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
     first_name: string;
     surname: string;
     phone: string;
-    home_address?: string | null;
     status: string;
     ward_id?: string | null;
     polling_unit_id?: string | null;
@@ -96,7 +95,7 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
           </Link>
         </div>
 
-        <div className="mb-6 grid gap-3 md:grid-cols-4">
+        <div className="mb-6 grid gap-3 md:grid-cols-3">
           <div className="rounded-[1.1rem] border border-slate-200 bg-white p-4 shadow-sm">
             <p className="text-sm text-slate-500">Visible applicants</p>
             <p className="mt-2 text-2xl font-semibold text-slate-900">{applicationRows.length}</p>
@@ -105,13 +104,9 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
             <p className="text-sm text-slate-500">Pending review</p>
             <p className="mt-2 text-2xl font-semibold text-slate-900">{pendingCount ?? 0}</p>
           </div>
-          <div className="rounded-[1.1rem] border border-emerald-200 bg-emerald-50 p-4 shadow-sm">
-            <p className="text-sm text-emerald-700">Approved</p>
-            <p className="mt-2 text-2xl font-semibold text-emerald-900">{approvedCount ?? 0}</p>
-          </div>
-          <div className="rounded-[1.1rem] border border-red-200 bg-red-50 p-4 shadow-sm">
-            <p className="text-sm text-red-700">Rejected</p>
-            <p className="mt-2 text-2xl font-semibold text-red-900">{rejectedCount ?? 0}</p>
+          <div className="rounded-[1.1rem] border border-slate-200 bg-white p-4 shadow-sm">
+            <p className="text-sm text-slate-500">Approved / rejected</p>
+            <p className="mt-2 text-2xl font-semibold text-slate-900">{(approvedCount ?? 0) + (rejectedCount ?? 0)}</p>
           </div>
         </div>
 
@@ -121,7 +116,6 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
               <tr>
                 <th className="px-4 py-3 font-medium">Applicant</th>
                 <th className="px-4 py-3 font-medium">Phone</th>
-                <th className="px-4 py-3 font-medium">Home address</th>
                 <th className="px-4 py-3 font-medium">Status</th>
                 <th className="px-4 py-3 font-medium">Ward / PU</th>
                 <th className="px-4 py-3 font-medium">Actions</th>
@@ -132,7 +126,6 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
                 <tr key={application.id}>
                   <td className="px-4 py-3 font-medium text-slate-900">{application.first_name} {application.surname}</td>
                   <td className="px-4 py-3 text-slate-600">{application.phone}</td>
-                  <td className="px-4 py-3 text-slate-600 max-w-[220px] truncate" title={application.home_address ?? ""}>{application.home_address ?? "—"}</td>
                   <td className="px-4 py-3">
                     <span className={`rounded-full px-3 py-1 text-xs font-medium uppercase ${statusClass(application.status)}`}>{application.status}</span>
                   </td>
@@ -143,32 +136,20 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
                         <Eye className="h-4 w-4" />
                         View
                       </Link>
-                      <form action="/admin/applicants/update" method="POST" className="space-y-2">
+                      <form action="/admin/applicants/update" method="POST">
                         <input type="hidden" name="application_id" value={application.id} />
                         <input type="hidden" name="status" value="approved" />
                         <input type="hidden" name="redirect_to" value={`/admin/applicants?q=${q}&status=${status}`} />
-                        <textarea
-                          name="comment"
-                          rows={2}
-                          placeholder="Approval comment"
-                          className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 outline-none ring-0 placeholder:text-slate-400"
-                        />
-                        <button className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-700">
+                        <button className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-700">
                           <CheckCircle2 className="h-4 w-4" />
                           Approve
                         </button>
                       </form>
-                      <form action="/admin/applicants/update" method="POST" className="space-y-2">
+                      <form action="/admin/applicants/update" method="POST">
                         <input type="hidden" name="application_id" value={application.id} />
                         <input type="hidden" name="status" value="rejected" />
                         <input type="hidden" name="redirect_to" value={`/admin/applicants?q=${q}&status=${status}`} />
-                        <textarea
-                          name="comment"
-                          rows={2}
-                          placeholder="Rejection reason"
-                          className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 outline-none ring-0 placeholder:text-slate-400"
-                        />
-                        <button className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
+                        <button className="inline-flex items-center gap-2 rounded-full border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
                           <XCircle className="h-4 w-4" />
                           Reject
                         </button>

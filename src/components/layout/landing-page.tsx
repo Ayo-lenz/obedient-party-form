@@ -10,7 +10,7 @@ export function LandingPage() {
             <div className="flex flex-col justify-center">
               <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-sm font-medium text-amber-800">
                 <BadgeCheck className="h-4 w-4" />
-                NDC · Eti-Osa LGA
+                Obidient Movement · Eti-Osa LGA
               </div>
 
               <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -18,7 +18,9 @@ export function LandingPage() {
               </h1>
 
               <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-                This streamlined process is targeted at verifying details, confirm ward and polling unit, and keep everything organized for the next phase. submission of this expression of interest form does not guarantee appointment. All the application will be subject to approval terms, conditions and selection criteria of the structure.
+                Join the movement by expressing interest to serve as a polling unit leader in Eti-Osa LGA.
+                This streamlined process helps us verify your details, confirm your ward and polling unit, and
+                keep everything organized for the next phase.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">

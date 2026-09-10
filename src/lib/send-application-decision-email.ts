@@ -1,7 +1,5 @@
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 import { buildApplicationDecisionEmail } from "@/lib/application-decision-email";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendApplicationDecisionEmail({
   to,
@@ -18,24 +16,30 @@ export async function sendApplicationDecisionEmail({
     return { success: false, skipped: true };
   }
 
-  if (!process.env.RESEND_API_KEY) {
-    console.warn("RESEND_API_KEY is not configured. Skipping email send.");
+  const gmailUser = process.env.GMAIL_USER;
+  const gmailPassword = process.env.GMAIL_APP_PASSWORD;
+
+  if (!gmailUser || !gmailPassword) {
+    console.warn("GMAIL_USER or GMAIL_APP_PASSWORD is not configured. Skipping email send.");
     return { success: false, skipped: true };
   }
 
   const email = buildApplicationDecisionEmail({ status, applicantName, comment });
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: gmailUser,
+      pass: gmailPassword,
+    },
+  });
 
-  const result = await resend.emails.send({
-    from: process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev",
+  const result = await transporter.sendMail({
+    from: gmailUser,
     to,
     subject: email.subject,
     text: email.text,
     html: email.html,
   });
 
-  if (result.error) {
-    throw new Error(result.error.message);
-  }
-
-  return { success: true, id: result.data?.id ?? null };
+  return { success: true, id: result.messageId ?? null };
 }
