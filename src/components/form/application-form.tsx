@@ -204,6 +204,10 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
                 accept="image/*,.pdf"
                 className="w-full rounded-xl border border-slate-300 px-4 py-3"
                 {...register("membership_card")}
+                onChange={(e) => {
+                  const file = (e.target as HTMLInputElement).files?.[0] ?? null;
+                  setValue("membership_card", file as any);
+                }}
               />
               {errors.membership_card && <p className="mt-2 text-sm text-red-600">{errors.membership_card.message}</p>}
             </div>
@@ -214,6 +218,10 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
                 accept="image/*"
                 className="w-full rounded-xl border border-slate-300 px-4 py-3"
                 {...register("passport")}
+                onChange={(e) => {
+                  const file = (e.target as HTMLInputElement).files?.[0] ?? null;
+                  setValue("passport", file as any);
+                }}
               />
               {errors.passport && <p className="mt-2 text-sm text-red-600">{errors.passport.message}</p>}
             </div>
