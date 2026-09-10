@@ -28,6 +28,8 @@ const schema = z.object({
   surname: z.string().min(1, "Surname is required"),
   first_name: z.string().min(1, "First name is required"),
   other_names: z.string().optional(),
+  email: z.string().min(1, "Email is required").email("Enter a valid email address"),
+  home_address: z.string().min(1, "Home address is required"),
   phone: z.string().regex(/^(\+234|234|0)\d{10}$/, "Enter a valid Nigerian phone number"),
   has_smartphone: z.enum(["yes", "no"]),
   ward_code: z.string().min(1, "Select a ward"),
@@ -72,6 +74,8 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
     formData.append("surname", values.surname);
     formData.append("first_name", values.first_name);
     formData.append("other_names", values.other_names ?? "");
+    formData.append("email", values.email);
+    formData.append("home_address", values.home_address);
     formData.append("phone", values.phone);
     formData.append("has_smartphone", values.has_smartphone);
     formData.append("ward_code", values.ward_code);
@@ -135,6 +139,16 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
             <div>
               <label className="mb-2 block text-sm font-medium text-slate-700">Other names</label>
               <input {...register("other_names")} className="w-full rounded-xl border border-slate-300 px-4 py-3" />
+            </div>
+            <div>
+              <label className="mb-2 block text-sm font-medium text-slate-700">Email address</label>
+              <input {...register("email")} type="email" className="w-full rounded-xl border border-slate-300 px-4 py-3" />
+              {errors.email && <p className="mt-2 text-sm text-red-600">{errors.email.message}</p>}
+            </div>
+            <div>
+              <label className="mb-2 block text-sm font-medium text-slate-700">Home address</label>
+              <input {...register("home_address")} className="w-full rounded-xl border border-slate-300 px-4 py-3" />
+              {errors.home_address && <p className="mt-2 text-sm text-red-600">{errors.home_address.message}</p>}
             </div>
             <div>
               <label className="mb-2 block text-sm font-medium text-slate-700">Phone number</label>
