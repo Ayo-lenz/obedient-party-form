@@ -61,6 +61,8 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
 
   const [membershipCardName, setMembershipCardName] = useState<string>("No file chosen");
   const [passportName, setPassportName] = useState<string>("No file chosen");
+  const [membershipCardFile, setMembershipCardFile] = useState<File | null>(null);
+  const [passportFile, setPassportFile] = useState<File | null>(null);
 
   const selectedWardCode = watch("ward_code");
 
@@ -75,19 +77,42 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
   const handleFileSelection = (field: "membership_card" | "passport", file: File | null) => {
     if (!file) {
       setValue(field, undefined as never, { shouldValidate: true, shouldDirty: true });
+      if (field === "membership_card") {
+        setMembershipCardFile(null);
+        setMembershipCardName("No file chosen");
+      } else {
+        setPassportFile(null);
+        setPassportName("No file chosen");
+      }
       return;
     }
 
     setValue(field, file, { shouldValidate: true, shouldDirty: true });
     if (field === "membership_card") {
+      setMembershipCardFile(file);
       setMembershipCardName(file.name);
     } else {
+      setPassportFile(file);
       setPassportName(file.name);
     }
   };
 
   const onSubmit = (values: FormValues) => {
     setMessage(null);
+
+    const membershipCard = membershipCardFile ?? values.membership_card;
+    const passport = passportFile ?? values.passport;
+
+    if (!isValidUploadedFile(membershipCard)) {
+      setMessage("Please upload your membership card.");
+      return;
+    }
+
+    if (!isValidUploadedFile(passport)) {
+      setMessage("Please upload your passport photo.");
+      return;
+    }
+
     const formData = new FormData();
     formData.append("surname", values.surname);
     formData.append("first_name", values.first_name);
@@ -98,14 +123,8 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
     formData.append("has_smartphone", values.has_smartphone);
     formData.append("ward_code", values.ward_code);
     formData.append("polling_unit_code", values.polling_unit_code);
-
-    if (isValidUploadedFile(values.membership_card)) {
-      formData.append("membership_card", values.membership_card);
-    }
-
-    if (isValidUploadedFile(values.passport)) {
-      formData.append("passport", values.passport);
-    }
+    formData.append("membership_card", membershipCard, membershipCard.name);
+    formData.append("passport", passport, passport.name);
 
     startTransition(async () => {
       const result = await submitApplication(formData);
