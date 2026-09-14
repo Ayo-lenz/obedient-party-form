@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { ArrowLeft, ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import { submitApplication } from "@/app/apply/actions";
+import { isValidUploadedFile } from "@/lib/file-validation";
 
 type Ward = {
   id?: string;
@@ -58,9 +59,8 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
     },
   });
 
-  // preserve register handlers for file inputs so we don't break the native file dialog
-  const membershipRegister = register("membership_card");
-  const passportRegister = register("passport");
+  const [membershipCardName, setMembershipCardName] = useState<string>("No file chosen");
+  const [passportName, setPassportName] = useState<string>("No file chosen");
 
   const selectedWardCode = watch("ward_code");
 
@@ -71,6 +71,20 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
   useEffect(() => {
     setValue("polling_unit_code", "");
   }, [selectedWardCode, setValue]);
+
+  const handleFileSelection = (field: "membership_card" | "passport", file: File | null) => {
+    if (!file) {
+      setValue(field, undefined as never, { shouldValidate: true, shouldDirty: true });
+      return;
+    }
+
+    setValue(field, file, { shouldValidate: true, shouldDirty: true });
+    if (field === "membership_card") {
+      setMembershipCardName(file.name);
+    } else {
+      setPassportName(file.name);
+    }
+  };
 
   const onSubmit = (values: FormValues) => {
     setMessage(null);
@@ -84,8 +98,14 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
     formData.append("has_smartphone", values.has_smartphone);
     formData.append("ward_code", values.ward_code);
     formData.append("polling_unit_code", values.polling_unit_code);
-    formData.append("membership_card", values.membership_card);
-    formData.append("passport", values.passport);
+
+    if (isValidUploadedFile(values.membership_card)) {
+      formData.append("membership_card", values.membership_card);
+    }
+
+    if (isValidUploadedFile(values.passport)) {
+      formData.append("passport", values.passport);
+    }
 
     startTransition(async () => {
       const result = await submitApplication(formData);
@@ -207,13 +227,13 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
                 type="file"
                 accept="image/*,.pdf"
                 className="w-full rounded-xl border border-slate-300 px-4 py-3"
-                {...membershipRegister}
+                {...register("membership_card")}
                 onChange={(e) => {
-                  membershipRegister.onChange?.(e as any);
-                  const file = (e.target as HTMLInputElement).files?.[0] ?? null;
-                  setValue("membership_card", file as any);
+                  const file = e.target.files?.[0] ?? null;
+                  handleFileSelection("membership_card", file);
                 }}
               />
+              <p className="mt-2 text-sm text-slate-600">{membershipCardName}</p>
               {errors.membership_card && <p className="mt-2 text-sm text-red-600">{errors.membership_card.message}</p>}
             </div>
             <div>
@@ -222,13 +242,13 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
                 type="file"
                 accept="image/*"
                 className="w-full rounded-xl border border-slate-300 px-4 py-3"
-                {...passportRegister}
+                {...register("passport")}
                 onChange={(e) => {
-                  passportRegister.onChange?.(e as any);
-                  const file = (e.target as HTMLInputElement).files?.[0] ?? null;
-                  setValue("passport", file as any);
+                  const file = e.target.files?.[0] ?? null;
+                  handleFileSelection("passport", file);
                 }}
               />
+              <p className="mt-2 text-sm text-slate-600">{passportName}</p>
               {errors.passport && <p className="mt-2 text-sm text-red-600">{errors.passport.message}</p>}
             </div>
           </div>
