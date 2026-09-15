@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { ArrowLeft, ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { submitApplication } from "@/app/apply/actions";
 import { isValidUploadedFile } from "@/lib/file-validation";
 
@@ -53,6 +54,7 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
+  const router = useRouter();
   const [step, setStep] = useState(1);
   const [isPending, startTransition] = useTransition();
   const [message, setMessage] = useState<string | null>(null);
@@ -203,8 +205,11 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
       try {
         const result = await submitApplication(formData);
         if (!result.success) {
-          setMessage(result.message);
+          setMessage(result.message ?? "Please complete the form correctly.");
+          return;
         }
+
+        router.push(`/success?reference=${result.reference}`);
       } catch (error) {
         console.error("[upload-debug] submitApplication failed", error);
         setMessage("Something went wrong while submitting your application.");

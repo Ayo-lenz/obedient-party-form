@@ -1,6 +1,5 @@
 "use server";
 
-import { redirect } from "next/navigation";
 import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { ApplicationService } from "@/services/applicationService";
@@ -21,7 +20,9 @@ const schema = z.object({
   passport: z.custom<File>((value) => isValidUploadedFile(value)),
 });
 
-export async function submitApplication(formData: FormData) {
+export async function submitApplication(
+  formData: FormData
+): Promise<{ success: true; reference: string } | { success: false; message: string }> {
   console.log("[submit-debug] raw form-data keys", Array.from(formData.keys()));
   console.log("[submit-debug] membership_card raw", formData.get("membership_card"));
   console.log("[submit-debug] passport raw", formData.get("passport"));
@@ -92,5 +93,5 @@ export async function submitApplication(formData: FormData) {
     polling_unit_id: pollingUnitData.id,
   });
 
-  redirect(`/success?reference=${reference}`);
+  return { success: true, reference };
 }
