@@ -63,6 +63,7 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
   const [passportName, setPassportName] = useState<string>("No file chosen");
   const [membershipCardFile, setMembershipCardFile] = useState<File | null>(null);
   const [passportFile, setPassportFile] = useState<File | null>(null);
+  const [debugInfo, setDebugInfo] = useState<string>("Debug: no files selected yet.");
 
   const selectedWardCode = watch("ward_code");
 
@@ -84,6 +85,7 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
         setPassportFile(null);
         setPassportName("No file chosen");
       }
+      setDebugInfo(`Debug: ${field === "membership_card" ? "membership_card" : "passport"} cleared.`);
       return;
     }
 
@@ -95,6 +97,11 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
       setPassportFile(file);
       setPassportName(file.name);
     }
+
+    const valid = isValidUploadedFile(file);
+    const safeName = file.name || "unnamed";
+    const sizeText = `${file.size} bytes`;
+    setDebugInfo(`Debug: ${field} selected = ${safeName}, validFile=${valid}, size=${sizeText}, type=${file.type || "unknown"}`);
   };
 
   const onSubmit = (values: FormValues) => {
@@ -103,12 +110,19 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
     const membershipCard = membershipCardFile ?? values.membership_card;
     const passport = passportFile ?? values.passport;
 
-    if (!isValidUploadedFile(membershipCard)) {
+    const membershipValid = isValidUploadedFile(membershipCard);
+    const passportValid = isValidUploadedFile(passport);
+
+    setDebugInfo(
+      `Debug: membership_card valid=${membershipValid} (${membershipCard ? membershipCard.name : "none"}), passport valid=${passportValid} (${passport ? passport.name : "none"})`
+    );
+
+    if (!membershipValid) {
       setMessage("Please upload your membership card.");
       return;
     }
 
-    if (!isValidUploadedFile(passport)) {
+    if (!passportValid) {
       setMessage("Please upload your passport photo.");
       return;
     }
@@ -253,6 +267,9 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
                 }}
               />
               <p className="mt-2 text-sm text-slate-600">{membershipCardName}</p>
+              <p className="mt-2 rounded-md border border-amber-200 bg-amber-50 px-2 py-1 text-[11px] font-medium text-amber-800">
+                {debugInfo.includes("membership_card") ? debugInfo : `Debug: membership_card not selected`}
+              </p>
               {errors.membership_card && <p className="mt-2 text-sm text-red-600">{errors.membership_card.message}</p>}
             </div>
             <div>
@@ -268,6 +285,9 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
                 }}
               />
               <p className="mt-2 text-sm text-slate-600">{passportName}</p>
+              <p className="mt-2 rounded-md border border-amber-200 bg-amber-50 px-2 py-1 text-[11px] font-medium text-amber-800">
+                {debugInfo.includes("passport") ? debugInfo : `Debug: passport not selected`}
+              </p>
               {errors.passport && <p className="mt-2 text-sm text-red-600">{errors.passport.message}</p>}
             </div>
           </div>
