@@ -27,6 +27,12 @@ export class ApplicationService {
         );
       }
 
+      if (String(error.message).toLowerCase().includes("row-level security policy")) {
+        throw new Error(
+          "Supabase is blocking the insert because the applications table has RLS enabled. Verify that the service-role key is configured and the public insert policy is allowed."
+        );
+      }
+
       throw error;
     }
 
