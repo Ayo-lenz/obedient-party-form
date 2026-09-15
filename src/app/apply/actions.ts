@@ -23,75 +23,77 @@ const schema = z.object({
 export async function submitApplication(
   formData: FormData
 ): Promise<{ success: true; reference: string } | { success: false; message: string }> {
-  console.log("[submit-debug] raw form-data keys", Array.from(formData.keys()));
-  console.log("[submit-debug] membership_card raw", formData.get("membership_card"));
-  console.log("[submit-debug] passport raw", formData.get("passport"));
-  console.log("[submit-debug] membership_card instanceof File", formData.get("membership_card") instanceof File);
-  console.log("[submit-debug] passport instanceof File", formData.get("passport") instanceof File);
+  try {
+    console.log("[submit-debug] raw form-data keys", Array.from(formData.keys()));
 
-  const values = {
-    surname: String(formData.get("surname") ?? ""),
-    first_name: String(formData.get("first_name") ?? ""),
-    other_names: String(formData.get("other_names") ?? ""),
-    email: String(formData.get("email") ?? ""),
-    home_address: String(formData.get("home_address") ?? ""),
-    phone: String(formData.get("phone") ?? ""),
-    has_smartphone: String(formData.get("has_smartphone") ?? "yes"),
-    ward_code: String(formData.get("ward_code") ?? ""),
-    polling_unit_code: String(formData.get("polling_unit_code") ?? ""),
-    membership_card: formData.get("membership_card"),
-    passport: formData.get("passport"),
-  };
+    const values = {
+      surname: String(formData.get("surname") ?? ""),
+      first_name: String(formData.get("first_name") ?? ""),
+      other_names: String(formData.get("other_names") ?? ""),
+      email: String(formData.get("email") ?? ""),
+      home_address: String(formData.get("home_address") ?? ""),
+      phone: String(formData.get("phone") ?? ""),
+      has_smartphone: String(formData.get("has_smartphone") ?? "yes"),
+      ward_code: String(formData.get("ward_code") ?? ""),
+      polling_unit_code: String(formData.get("polling_unit_code") ?? ""),
+      membership_card: formData.get("membership_card"),
+      passport: formData.get("passport"),
+    };
 
-  const parsed = schema.safeParse(values);
-  console.log("[submit-debug] schema parsed", parsed.success ? "success" : parsed.error.issues);
-  if (!parsed.success) {
-    return { success: false, message: parsed.error.issues[0]?.message ?? "Please complete the form correctly." };
+    const parsed = schema.safeParse(values);
+    console.log("[submit-debug] schema parsed", parsed.success ? "success" : parsed.error.issues);
+    if (!parsed.success) {
+      return { success: false, message: parsed.error.issues[0]?.message ?? "Please complete the form correctly." };
+    }
+
+    const reference = `PARTY-${Date.now().toString().slice(-6)}`;
+    const membershipCardFile = parsed.data.membership_card as File;
+    const passportFile = parsed.data.passport as File;
+
+    const [membershipCardUrl, passportUrl] = await Promise.all([
+      StorageService.upload(membershipCardFile, "membership-cards", `applications/${reference}/membership-card-${Date.now()}-${membershipCardFile.name}`),
+      StorageService.upload(passportFile, "passport-photos", `applications/${reference}/passport-${Date.now()}-${passportFile.name}`),
+    ]);
+
+    const supabase = await createClient();
+    const { data: wardData, error: wardError } = await supabase
+      .from("wards")
+      .select("id")
+      .eq("code", parsed.data.ward_code)
+      .single();
+
+    if (wardError || !wardData) {
+      return { success: false, message: "The selected ward could not be found." };
+    }
+
+    const { data: pollingUnitData, error: pollingUnitError } = await supabase
+      .from("polling_units")
+      .select("id")
+      .eq("code", parsed.data.polling_unit_code)
+      .single();
+
+    if (pollingUnitError || !pollingUnitData) {
+      return { success: false, message: "The selected polling unit could not be found." };
+    }
+
+    await ApplicationService.create({
+      surname: parsed.data.surname,
+      first_name: parsed.data.first_name,
+      other_names: parsed.data.other_names || null,
+      email: parsed.data.email,
+      home_address: parsed.data.home_address,
+      phone: parsed.data.phone,
+      has_smartphone: parsed.data.has_smartphone === "yes",
+      membership_card_url: membershipCardUrl,
+      passport_url: passportUrl,
+      ward_id: wardData.id,
+      polling_unit_id: pollingUnitData.id,
+    });
+
+    return { success: true, reference };
+  } catch (error) {
+    console.error("[submit-debug] submitApplication crashed", error);
+    const message = error instanceof Error ? error.message : "Something went wrong while submitting your application.";
+    return { success: false, message };
   }
-
-  const reference = `PARTY-${Date.now().toString().slice(-6)}`;
-  const membershipCardFile = parsed.data.membership_card as File;
-  const passportFile = parsed.data.passport as File;
-
-  const [membershipCardUrl, passportUrl] = await Promise.all([
-    StorageService.upload(membershipCardFile, "membership-cards", `applications/${reference}/membership-card-${Date.now()}-${membershipCardFile.name}`),
-    StorageService.upload(passportFile, "passport-photos", `applications/${reference}/passport-${Date.now()}-${passportFile.name}`),
-  ]);
-
-  const supabase = await createClient();
-  const { data: wardData, error: wardError } = await supabase
-    .from("wards")
-    .select("id")
-    .eq("code", parsed.data.ward_code)
-    .single();
-
-  if (wardError || !wardData) {
-    return { success: false, message: "The selected ward could not be found." };
-  }
-
-  const { data: pollingUnitData, error: pollingUnitError } = await supabase
-    .from("polling_units")
-    .select("id")
-    .eq("code", parsed.data.polling_unit_code)
-    .single();
-
-  if (pollingUnitError || !pollingUnitData) {
-    return { success: false, message: "The selected polling unit could not be found." };
-  }
-
-  await ApplicationService.create({
-    surname: parsed.data.surname,
-    first_name: parsed.data.first_name,
-    other_names: parsed.data.other_names || null,
-    email: parsed.data.email,
-    home_address: parsed.data.home_address,
-    phone: parsed.data.phone,
-    has_smartphone: parsed.data.has_smartphone === "yes",
-    membership_card_url: membershipCardUrl,
-    passport_url: passportUrl,
-    ward_id: wardData.id,
-    polling_unit_id: pollingUnitData.id,
-  });
-
-  return { success: true, reference };
 }
