@@ -5,6 +5,7 @@ import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { ApplicationService } from "@/services/applicationService";
 import { StorageService } from "@/services/storageService";
+import { isValidUploadedFile } from "@/lib/file-validation";
 
 const schema = z.object({
   surname: z.string().min(1),
@@ -16,11 +17,17 @@ const schema = z.object({
   has_smartphone: z.enum(["yes", "no"]),
   ward_code: z.string().min(1),
   polling_unit_code: z.string().min(1),
-  membership_card: z.custom<File>((value) => value instanceof File && value.size > 0),
-  passport: z.custom<File>((value) => value instanceof File && value.size > 0),
+  membership_card: z.custom<File>((value) => isValidUploadedFile(value)),
+  passport: z.custom<File>((value) => isValidUploadedFile(value)),
 });
 
 export async function submitApplication(formData: FormData) {
+  console.log("[submit-debug] raw form-data keys", Array.from(formData.keys()));
+  console.log("[submit-debug] membership_card raw", formData.get("membership_card"));
+  console.log("[submit-debug] passport raw", formData.get("passport"));
+  console.log("[submit-debug] membership_card instanceof File", formData.get("membership_card") instanceof File);
+  console.log("[submit-debug] passport instanceof File", formData.get("passport") instanceof File);
+
   const values = {
     surname: String(formData.get("surname") ?? ""),
     first_name: String(formData.get("first_name") ?? ""),
@@ -36,6 +43,7 @@ export async function submitApplication(formData: FormData) {
   };
 
   const parsed = schema.safeParse(values);
+  console.log("[submit-debug] schema parsed", parsed.success ? "success" : parsed.error.issues);
   if (!parsed.success) {
     return { success: false, message: parsed.error.issues[0]?.message ?? "Please complete the form correctly." };
   }

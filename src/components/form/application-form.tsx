@@ -35,8 +35,8 @@ const schema = z.object({
   has_smartphone: z.enum(["yes", "no"]),
   ward_code: z.string().min(1, "Select a ward"),
   polling_unit_code: z.string().min(1, "Select a polling unit"),
-  membership_card: z.custom<File>((value) => value instanceof File && value.size > 0, "Upload your membership card"),
-  passport: z.custom<File>((value) => value instanceof File && value.size > 0, "Upload your passport photo"),
+  membership_card: z.custom<File>((value) => isValidUploadedFile(value), "Upload your membership card"),
+  passport: z.custom<File>((value) => isValidUploadedFile(value), "Upload your passport photo"),
 });
 
 type FormValues = z.infer<typeof schema>;
