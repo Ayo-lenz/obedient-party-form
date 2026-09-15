@@ -76,7 +76,10 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
   }, [selectedWardCode, setValue]);
 
   const handleFileSelection = (field: "membership_card" | "passport", file: File | null) => {
+    console.log("[upload-debug] handleFileSelection", { field, file });
+
     if (!file) {
+      console.error("[upload-debug] file is null/empty for field:", field);
       setValue(field, undefined as never, { shouldValidate: true, shouldDirty: true });
       if (field === "membership_card") {
         setMembershipCardFile(null);
@@ -101,6 +104,14 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
     const valid = isValidUploadedFile(file);
     const safeName = file.name || "unnamed";
     const sizeText = `${file.size} bytes`;
+    console.log("[upload-debug] selected file details", {
+      field,
+      name: safeName,
+      size: file.size,
+      type: file.type,
+      validFile: valid,
+      instanceOfFile: file instanceof File,
+    });
     setDebugInfo(`Debug: ${field} selected = ${safeName}, validFile=${valid}, size=${sizeText}, type=${file.type || "unknown"}`);
   };
 
@@ -110,19 +121,38 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
     const membershipCard = membershipCardFile ?? values.membership_card;
     const passport = passportFile ?? values.passport;
 
+    console.log("[upload-debug] submit payload values", {
+      values,
+      membershipCard,
+      passport,
+      membershipCardType: typeof membershipCard,
+      passportType: typeof passport,
+      membershipCardIsFile: membershipCard instanceof File,
+      passportIsFile: passport instanceof File,
+    });
+
     const membershipValid = isValidUploadedFile(membershipCard);
     const passportValid = isValidUploadedFile(passport);
+
+    console.log("[upload-debug] validation result", {
+      membershipValid,
+      passportValid,
+      membershipCardName: membershipCard ? membershipCard.name : "none",
+      passportName: passport ? passport.name : "none",
+    });
 
     setDebugInfo(
       `Debug: membership_card valid=${membershipValid} (${membershipCard ? membershipCard.name : "none"}), passport valid=${passportValid} (${passport ? passport.name : "none"})`
     );
 
     if (!membershipValid) {
+      console.error("[upload-debug] Membership card validation failed.");
       setMessage("Please upload your membership card.");
       return;
     }
 
     if (!passportValid) {
+      console.error("[upload-debug] Passport validation failed.");
       setMessage("Please upload your passport photo.");
       return;
     }
@@ -140,10 +170,22 @@ export function ApplicationForm({ wards, pollingUnits }: ApplicationFormProps) {
     formData.append("membership_card", membershipCard, membershipCard.name);
     formData.append("passport", passport, passport.name);
 
+    console.log("[upload-debug] formData keys before submit", {
+      hasMembershipCard: formData.get("membership_card") instanceof File,
+      hasPassport: formData.get("passport") instanceof File,
+      membershipCardName: formData.get("membership_card") ? (formData.get("membership_card") as File).name : "none",
+      passportName: formData.get("passport") ? (formData.get("passport") as File).name : "none",
+    });
+
     startTransition(async () => {
-      const result = await submitApplication(formData);
-      if (!result.success) {
-        setMessage(result.message);
+      try {
+        const result = await submitApplication(formData);
+        if (!result.success) {
+          setMessage(result.message);
+        }
+      } catch (error) {
+        console.error("[upload-debug] submitApplication failed", error);
+        setMessage("Something went wrong while submitting your application.");
       }
     });
   };
