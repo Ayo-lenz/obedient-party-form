@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CheckCircle2, Download, Eye, Search, XCircle } from "lucide-react";
 import { requireAdmin } from "@/lib/admin-auth";
-import { createClient } from "@/lib/supabase/server";
+import { adminClient } from "@/lib/supabase/admin";
 
 function statusClass(status: string) {
   switch (status) {
@@ -20,7 +20,7 @@ export default async function ApplicantsPage({ searchParams }: { searchParams?: 
   const q = params?.q ?? "";
   const status = params?.status ?? "all";
 
-  const supabase = await createClient();
+  const supabase = adminClient;
   let query = supabase.from("applications").select("id, status, surname, first_name, phone, created_at, ward_id, polling_unit_id").order("created_at", { ascending: false });
 
   if (q) {

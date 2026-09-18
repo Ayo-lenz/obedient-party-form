@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@/lib/supabase/server";
+import { adminClient } from "@/lib/supabase/admin";
 
 export async function GET() {
-  const supabase = await createClient();
-  const { data: applications } = await supabase
+  const { data: applications } = await adminClient
     .from("applications")
     .select(
       "id, status, surname, first_name, other_names, phone, home_address, review_comment, created_at"

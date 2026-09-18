@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Award, BadgeCheck, Eye, Search, ShieldCheck, Sparkles, Users } from "lucide-react";
 import { requireAdmin } from "@/lib/admin-auth";
-import { createClient } from "@/lib/supabase/server";
+import { adminClient } from "@/lib/supabase/admin";
 
 function statusClass(status: string) {
   switch (status) {
@@ -16,7 +16,7 @@ function statusClass(status: string) {
 
 export default async function AdminDashboardPage() {
   await requireAdmin();
-  const supabase = await createClient();
+  const supabase = adminClient;
 
   const [{ data: applications }, { count: pendingCount }, { count: approvedCount }, { count: rejectedCount }] = await Promise.all([
     supabase.from("applications").select("id, status, surname, first_name, phone, created_at").order("created_at", { ascending: false }),

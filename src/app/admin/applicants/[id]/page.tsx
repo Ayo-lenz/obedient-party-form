@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, BadgeCheck, CheckCircle2, FileText, ShieldCheck, XCircle } from "lucide-react";
 import { requireAdmin } from "@/lib/admin-auth";
-import { createClient } from "@/lib/supabase/server";
+import { adminClient } from "@/lib/supabase/admin";
 
 function statusClass(status: string) {
   switch (status) {
@@ -17,7 +17,7 @@ function statusClass(status: string) {
 export default async function ApplicantDetailPage({ params }: { params: Promise<{ id: string }> }) {
   await requireAdmin();
   const { id } = await params;
-  const supabase = await createClient();
+  const supabase = adminClient;
 
   const { data: application } = await supabase
     .from("applications")
